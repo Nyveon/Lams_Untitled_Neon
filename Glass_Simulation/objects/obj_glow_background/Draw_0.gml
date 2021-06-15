@@ -1,0 +1,1 @@
+draw_sprite(bac_city_diffuse, -1, 0, 0);

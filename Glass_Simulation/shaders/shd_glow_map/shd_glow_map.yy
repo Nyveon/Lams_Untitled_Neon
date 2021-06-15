@@ -1,11 +1,11 @@
 {
   "type": 1,
   "parent": {
-    "name": "Shaders",
-    "path": "folders/Shaders.yy",
+    "name": "shd_grp_glow",
+    "path": "folders/Shaders/shd_grp_glow.yy",
   },
   "resourceVersion": "1.0",
-  "name": "shader_glow",
+  "name": "shd_glow_map",
   "tags": [],
   "resourceType": "GMShader",
 }

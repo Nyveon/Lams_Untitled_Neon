@@ -40,7 +40,7 @@ function node(value_x, value_y, value_id) constructor {
 	
 	// Draw self
 	static draw = function() {
-		draw_sprite_ext(s_Node_Debug, 0, x, y, 1, 1, 0, make_color_hsv(0, temperature * 2.5, 255), 0.5);
+		draw_sprite_ext(s_Node_Debug, 0, x, y, 1, 1, 0, make_color_hsv(temperature/6, temperature * 2.5, 255), 0.6);
 	}
 	
 	// Temperature setter
@@ -56,4 +56,21 @@ nodes = ds_list_create();
 for (var i = 0; i < 200; i++) {
 	ds_list_add(nodes, new node((room_width/2) - 144 + (joint_distance*i), room_height/2, i));
 }
+#endregion
+
+#region Animation and visual
+glowing = false;
+
+
+gpu_set_blendenable(true);
+draw_set_color(c_white);
+
+glow_pass_surface = surface_create(camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]));
+
+samp_glow_surface =   shader_get_sampler_index(shd_glow_map, "s_glow_surface");
+uni_glow_blur_sigma = shader_get_uniform(shd_glow_map, "u_glow_blur_sigma");
+uni_glow_resolution =   shader_get_uniform(shd_glow_map, "u_glow_resolution");
+
+var_sigma = 0;
+pulse_speed = 0.02;
 #endregion
