@@ -11,11 +11,10 @@ joint_distance = 1;
 heat_exchange = -0.5;
 
 // Constructor for a glass node
-function node(value_x, value_y, value_id) constructor {
+function Node(value_x, value_y, value_id) constructor {
 	// Position
 	x = value_x;
 	y = value_y;
-	angle = 0;
 	
 	// Data structure values
 	instance = instance_create_layer(x, y, "Instances", o_Node);
@@ -40,7 +39,7 @@ function node(value_x, value_y, value_id) constructor {
 	
 	// Draw self
 	static draw = function() {
-		draw_sprite_ext(s_Node_Debug, 0, x, y, 1, 1, 0, make_color_hsv(temperature/6, temperature * 2.5, 255), 0.6);
+		draw_sprite_ext(s_Node_Debug, 0, x, y, 1, 1, 0, make_color_hsv(temperature/6, temperature * 2.5, 255), 0.4);
 	}
 	
 	// Temperature setter
@@ -54,23 +53,10 @@ function node(value_x, value_y, value_id) constructor {
 nodes = ds_list_create();
 // Debug glass tube
 for (var i = 0; i < 200; i++) {
-	ds_list_add(nodes, new node((room_width/2) - 144 + (joint_distance*i), room_height/2, i));
+	ds_list_add(nodes, new Node((room_width/2) - 144 + (joint_distance*i), room_height/2, i));
 }
 #endregion
 
 #region Animation and visual
 glowing = false;
-
-
-gpu_set_blendenable(true);
-draw_set_color(c_white);
-
-glow_pass_surface = surface_create(camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]));
-
-samp_glow_surface =   shader_get_sampler_index(shd_glow_map, "s_glow_surface");
-uni_glow_blur_sigma = shader_get_uniform(shd_glow_map, "u_glow_blur_sigma");
-uni_glow_resolution =   shader_get_uniform(shd_glow_map, "u_glow_resolution");
-
-var_sigma = 0;
-pulse_speed = 0.02;
 #endregion

@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "s_Hand",
-    "path": "sprites/s_Hand/s_Hand.yy",
+    "name": "s_Grab",
+    "path": "sprites/s_Grab/s_Grab.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "o_Button",
+    "path": "objects/o_Button/o_Button.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -20,18 +23,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Workshop",
-    "path": "folders/Objects/Workshop.yy",
+    "name": "Interface",
+    "path": "folders/Objects/Workshop/Interface.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_Hand",
+  "name": "o_Drag",
   "tags": [],
   "resourceType": "GMObject",
 }

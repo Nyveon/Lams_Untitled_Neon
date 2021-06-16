@@ -2,8 +2,7 @@
 
 // Outer glow shader
 if (glowing) {
-	surface_set_target(glow_pass_surface);
-	draw_clear_alpha(c_black, 1.0);
+	surface_set_target(o_Glow.glow_pass_surface);
 	for (var i = 0; i < ds_list_size(nodes); i++) {
 		var n = nodes[| i]
 		n.draw();
