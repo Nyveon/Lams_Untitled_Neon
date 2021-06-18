@@ -10,4 +10,21 @@ y = mouse_y;
 // 1 - rotate
 // 2 - pull
 
-current_tool = 0; 
+switch (current_tool) {
+	case 0:
+		o_Drag.glowing = true;
+		o_Pull.glowing = false;
+		o_Rotate.glowing = false;
+		break;
+	case 1:
+		o_Drag.glowing = false;
+		o_Pull.glowing = false;
+		o_Rotate.glowing = true;
+		break;
+	case 2:
+		o_Drag.glowing = false;
+		o_Pull.glowing = true;
+		o_Rotate.glowing = false;
+		break;
+}
+
