@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "s_Torch",
-    "path": "sprites/s_Torch/s_Torch.yy",
+    "name": "s_FlameHitbox",
+    "path": "sprites/s_FlameHitbox/s_FlameHitbox.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -20,11 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -32,7 +28,7 @@
     "path": "folders/Objects/Workshop/Blow torch.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_Flame",
+  "name": "o_FlameHitbox",
   "tags": [],
   "resourceType": "GMObject",
 }

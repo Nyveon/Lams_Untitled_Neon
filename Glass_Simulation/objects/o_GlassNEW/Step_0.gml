@@ -1,17 +1,6 @@
 #region Input
-// Controls
-action_pressed = mouse_check_button_pressed(mb_left);
-action_released = mouse_check_button_released(mb_left);
-
-alt_action_pressed = mouse_check_button_pressed(mb_right);
-alt_action_released = mouse_check_button_released(mb_right);
-
-rotation_direction = keyboard_check(ord("Q")) - keyboard_check(ord("E")); 
-debug_heat_up = keyboard_check(ord("H"));
-
-
 // Release drag
-if (action_released) {
+if (o_Input.action_released) {
 	selected = -1;
 	mouse_relative_x = 0;
 	mouse_relative_y = 0;
@@ -33,7 +22,7 @@ for (var i = 0; i < ds_list_size(nodes); i++) {  // MERGE INTO NODE-STEP
 		hover = true;
 		
 		// Pressed
-		if (action_pressed) {
+		if (o_Input.action_pressed) {
 			selected = inst.index;
 			mouse_relative_x =  mouse_x;
 			mouse_relative_y =  mouse_y;
@@ -176,7 +165,7 @@ if (selected != -1) {
 	
 	
 	// ---Heat up---
-	if (debug_heat_up) {
+	if (o_Input.debug_heat_up) {
 		nodes[| selected].changeTemperature(1);
 	}
 }
