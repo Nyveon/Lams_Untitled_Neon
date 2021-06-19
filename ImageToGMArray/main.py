@@ -2,7 +2,7 @@
 
 from PIL import Image
 
-im = Image.open(r".\s.png") # replace this with the image to turn into an array
+im = Image.open(r".\m.png") # replace this with the image to turn into an array
 px = im.load()
 
 l = 0
@@ -13,7 +13,7 @@ for y in range(im.size[1]):
             out += '[' + str(x) + ',' + str(y) + '],'
             l += 1
 out = out[:-1]
-out += ']'
+out += '];'
 
 print(l)
 print(out) # it literally print outs the results hahah
