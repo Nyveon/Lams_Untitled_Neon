@@ -1,8 +1,15 @@
 ds_list_destroy(touching);
 touching = ds_list_create();
-with (hitbox) {
-	other.num = instance_place_list(x, y, o_Node, other.touching, false);
+if o_Hand.current_tool == 0 { // only heat when in drag mode
+	sprite_index = s_Torch;
+	with (hitbox) {
+		other.num = instance_place_list(x, y, o_Node, other.touching, false);
+	}
+} else {
+	num = 0;
+	sprite_index = s_Torch_Off;
 }
+
 hitbox.x = x;
 hitbox.y = y + hitbox_offset_y;
 

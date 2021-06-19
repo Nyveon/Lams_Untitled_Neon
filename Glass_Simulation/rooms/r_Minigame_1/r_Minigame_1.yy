@@ -20,6 +20,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"o_Rotate","path":"objects/o_Rotate/o_Rotate.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":84.0,"y":205.0,"resourceVersion":"1.0","name":"inst_533F8F24","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"o_Pull","path":"objects/o_Pull/o_Pull.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":135.0,"y":205.0,"resourceVersion":"1.0","name":"inst_2647EFB2","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"o_Hand","path":"objects/o_Hand/o_Hand.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":111.0,"y":24.0,"resourceVersion":"1.0","name":"inst_2B235AD9","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"o_Glass_Objective","path":"objects/o_Glass_Objective/o_Glass_Objective.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":35.0,"y":62.0,"resourceVersion":"1.0","name":"inst_1DA08204","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":1,"gridY":1,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"GUI","tags":[],"resourceType":"GMRInstanceLayer",},
     {"assets":[
         {"spriteId":{"name":"s_Frame","path":"sprites/s_Frame/s_Frame.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":true,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"graphic_7C3FE353","tags":[],"resourceType":"GMRSpriteGraphic",},
@@ -51,6 +52,7 @@
     {"name":"inst_37B9E222","path":"rooms/r_Minigame_1/r_Minigame_1.yy",},
     {"name":"inst_54C4406B","path":"rooms/r_Minigame_1/r_Minigame_1.yy",},
     {"name":"inst_2B235AD9","path":"rooms/r_Minigame_1/r_Minigame_1.yy",},
+    {"name":"inst_1DA08204","path":"rooms/r_Minigame_1/r_Minigame_1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
