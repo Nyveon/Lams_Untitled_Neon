@@ -1,11 +1,14 @@
 {
   "spriteId": {
-    "name": "s_Node_Debug",
-    "path": "sprites/s_Node_Debug/s_Node_Debug.yy",
+    "name": "s_Node_Checker",
+    "path": "sprites/s_Node_Checker/s_Node_Checker.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "s_Pixel",
+    "path": "sprites/s_Pixel/s_Pixel.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
@@ -20,12 +23,16 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Minigame 1",
+    "path": "folders/Objects/Minigame 1.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_Checker_Node",
