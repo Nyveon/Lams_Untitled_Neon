@@ -57,51 +57,18 @@ if (selected != -1) {
 	} else if (o_Hand.current_tool == 1) {					// ROTATING
 		// Find groups of heated nodes
 		heated_group_midpoints = ds_list_create();
-		var inside_a_heated_group = false;
-		var heated_group_start = 0;
-		for (var i = 0; i < ds_list_size(nodes); i++) { // MERGE INTO NODE-STEP
-			var n = nodes[| i];
-			
-			// State switch
-			if (inside_a_heated_group) {	// Currently recorriendo a heated section
-				if (not n.isHeated()) {
-					inside_a_heated_group = false;
-					ds_list_add(heated_group_midpoints, floor((heated_group_start + i)/2));
-				}
-			} else {
-				if (n.isHeated()) {	// Not yet recorriendo a heated section
-					inside_a_heated_group = true;
-					heated_group_start = i;
-				}
-			}
-		}
-		if (inside_a_heated_group) { // Edge case: first or last node is heated, last node was heated
-			ds_list_add(heated_group_midpoints, floor((heated_group_start + ds_list_size(nodes) - 1)/2));
-		}
-		
+		heated_groups(heated_group_midpoints);
+
 		// If there is even something to be bent,
 		if (ds_list_size(heated_group_midpoints) > 0) {
 			
 			// Get nearest heated midpoint to mouse (one to be bent)
-			var pivot = 0;
-			var current_min = 1000000000; // no way a number will be bigger than this lol
-			for (var i = 0; i < ds_list_size(heated_group_midpoints); i++) {
-				var n = nodes[| heated_group_midpoints[| i]];
-				//var pd = point_distance(n.x, n.y, mouse_x, mouse_y);
-				var pd = abs(selected - n.index) //node distance
-				if (pd < current_min) {
-					current_min = pd;
-					pivot = n.index;
-				}
-			}
-			
-			// Rotate around that point
+			var pivot = heated_nearest();
 			var pivot_node = nodes[| pivot];
 			var pivot_x = pivot_node.x;
 			var pivot_y = pivot_node.y;
-			
 			var direction_to_pivot = -angle_difference(point_direction(nodes[| selected].x, nodes[| selected].y, pivot_x, pivot_y), point_direction(mouse_x, mouse_y, pivot_x, pivot_y));
-			//show_debug_message(direction_to_pivot);
+
 			
 			// Left or right of heated area to be bent
 			if selected > pivot { // left
@@ -156,7 +123,78 @@ if (selected != -1) {
 			
 			
 		}
-		ds_list_destroy(heated_group_midpoints); // memory yaaay
+		
+		// Cleanup
+		ds_list_destroy(heated_group_midpoints); 
+	} else if (o_Hand.current_tool == 2) {	// PULL/PINCHING
+		
+		// Get groups of heated nodes
+		heated_group_midpoints = ds_list_create();
+		heated_groups(heated_group_midpoints);
+		
+		if (ds_list_size(heated_group_midpoints) > 0) {
+			// Get nearest heated node group
+			var pivot = heated_nearest(); // control point 2 (vertex)
+			var pivot_node = nodes[| pivot];
+			
+			var left_most = 0; // leftmost node of the heated area
+			var right_most = ds_list_size(nodes) - 1; // rightmost node of the heated area
+		
+			// Find left-most heated point
+			for (var i = pivot - 1; i >= 0; i--) { 
+				var n = nodes[| i];
+				if (not n.isHeated()) {
+					left_most = i + 1;
+					break;
+				}
+			}
+			
+			// Find right-most heated point
+			for (var i = pivot + 1; i < ds_list_size(nodes); i++) { 
+				var n = nodes[| i];
+				if (not n.isHeated()) {
+					right_most = i - 1;
+					break;
+				}
+			}
+			
+			//nodes[| left_most].temperature = 800;
+			//nodes[| right_most].temperature = 800;
+			//nodes[| pivot].temperature = 800;
+
+			// BEZIER CURVE TIME AWW YEAHHH
+			var c1_x = nodes[| left_most].x;
+			var c1_y = nodes[| left_most].y;
+			var c2_x = mouse_x;
+			var c2_y = mouse_y;
+			var c3_x = nodes[| right_most].x;
+			var c3_y = nodes[| right_most].y;
+			var range = (right_most - left_most);
+			
+			for (var i = left_most + 1; i < right_most; i++) {
+				var n = nodes[| i];
+
+				//show_debug_message("c1: " + string(c1_x) + ", " + string(c1_y));
+				//show_debug_message("c2: " + string(c2_x) + ", " + string(c2_y));
+				//show_debug_message("c3: " + string(c3_x) + ", " + string(c3_y));
+				
+				var t = (i - left_most)/range;
+				var bx = (1 - t) * (1 - t) * c1_x + 2 * (1 - t) * t * c2_x + t * t * c3_x;
+				var by = (1 - t) * (1 - t) * c1_y + 2 * (1 - t) * t * c2_y + t * t * c3_y;
+				
+				n.x = lerp(n.x, bx, 0.1);
+				n.y = lerp(n.y, by, 0.1);
+				//show_debug_message("t: " + string(t));
+				show_debug_message(string(bx) + " " + string(by));
+			}
+
+
+
+
+		}
+		
+		// Cleanup
+		ds_list_destroy(heated_group_midpoints);
 	}
 
 	// ---Heat up---

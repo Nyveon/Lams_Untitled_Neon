@@ -38,12 +38,12 @@ function Node(value_x, value_y, value_id) constructor {
 	
 	// Draw self
 	static draw = function() {
-		draw_sprite_ext(s_Node_Debug, 0, x, y, 1, 1, 0, make_color_hsv(temperature/6, temperature * 2.5, 255), 0.4);
+		draw_sprite_ext(s_Node_Debug, 0, x, y, 1, 1, 0, make_color_hsv(temperature/9, temperature * 2.5, 255), 0.4);
 	}
 	
 	// Temperature setter
 	static changeTemperature = function(value) {
-		temperature = clamp(temperature + value, 0, 100);
+		temperature = clamp(temperature + value, 0, 250);
 	}
 	
 	// Check: is heated?
@@ -62,4 +62,49 @@ for (var i = 0; i < 200; i++) {
 
 #region Animation and visual
 glowing = false;
+#endregion
+
+#region Big maths
+
+// Find groups of consecutive heated nodes
+heated_groups = function(list) {
+	var inside_a_heated_group = false;
+	var heated_group_start = 0;
+	for (var i = 0; i < ds_list_size(nodes); i++) { // MERGE INTO NODE-STEP
+		var n = nodes[| i];
+			
+		// State switch
+		if (inside_a_heated_group) {	// Currently recorriendo a heated section
+			if (not n.isHeated()) {
+				inside_a_heated_group = false;
+				ds_list_add(list, floor((heated_group_start + i)/2));
+			}
+		} else {
+			if (n.isHeated()) {	// Not yet recorriendo a heated section
+				inside_a_heated_group = true;
+				heated_group_start = i;
+			}
+		}
+	}
+	if (inside_a_heated_group) { // Edge case: first or last node is heated, last node was heated
+		ds_list_add(heated_group_midpoints, floor((heated_group_start + ds_list_size(nodes) - 1)/2));
+	}
+}
+
+// Find nearest group of consecutive heated nodes
+heated_nearest = function() {
+	var pivot = 0;
+	var current_min = 1000000000; // no way a number will be bigger than this lol
+	for (var i = 0; i < ds_list_size(heated_group_midpoints); i++) {
+		var n = nodes[| heated_group_midpoints[| i]];
+		//var pd = point_distance(n.x, n.y, mouse_x, mouse_y);
+		var pd = abs(selected - n.index) //node distance
+		if (pd < current_min) {
+			current_min = pd;
+			pivot = n.index;
+		}
+	}
+	return pivot;
+}
+
 #endregion

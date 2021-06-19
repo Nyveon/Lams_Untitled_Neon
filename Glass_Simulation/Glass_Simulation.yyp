@@ -23,6 +23,7 @@
     {"id":{"name":"s_Torch","path":"sprites/s_Torch/s_Torch.yy",},"order":1,},
     {"id":{"name":"o_Hand","path":"objects/o_Hand/o_Hand.yy",},"order":3,},
     {"id":{"name":"s_Node_Debug","path":"sprites/s_Node_Debug/s_Node_Debug.yy",},"order":0,},
+    {"id":{"name":"shader_desaturate","path":"shaders/shader_desaturate/shader_desaturate.yy",},"order":3,},
     {"id":{"name":"s_neon3Backing","path":"sprites/s_neon3Backing/s_neon3Backing.yy",},"order":5,},
     {"id":{"name":"o_Button","path":"objects/o_Button/o_Button.yy",},"order":0,},
     {"id":{"name":"o_Input","path":"objects/o_Input/o_Input.yy",},"order":9,},
