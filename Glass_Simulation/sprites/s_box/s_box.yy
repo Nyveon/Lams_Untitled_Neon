@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "backgroundImages",
-    "path": "folders/Sprites/backgroundImages.yy",
+    "name": "Backgrounds",
+    "path": "folders/Sprites/Scenes/Backgrounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_box",

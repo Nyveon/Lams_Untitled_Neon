@@ -8,7 +8,7 @@ rotation_speed = 3;
 
 #region Tube and nodes
 joint_distance = 1;
-heat_exchange = -0.5;
+heat_exchange = -0.4;
 
 // Constructor for a glass node
 function Node(value_x, value_y, value_id) constructor {
@@ -23,7 +23,6 @@ function Node(value_x, value_y, value_id) constructor {
 	
 	// Physical values
 	temperature = 0;
-	
 	
 	// Update own position
 	static set_position = function(value_x, value_y) {
@@ -47,6 +46,10 @@ function Node(value_x, value_y, value_id) constructor {
 		temperature = clamp(temperature + value, 0, 100);
 	}
 	
+	// Check: is heated?
+	static isHeated = function() {
+		return (temperature > 1);
+	}
 }
 
 

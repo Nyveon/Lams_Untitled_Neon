@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Minigame 1",
+    "path": "folders/Sprites/Object Sprites/Minigame 1.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_Torch",

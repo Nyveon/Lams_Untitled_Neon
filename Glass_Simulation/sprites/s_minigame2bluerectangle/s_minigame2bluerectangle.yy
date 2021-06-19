@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Minigame 2",
+    "path": "folders/Sprites/Object Sprites/Minigame 2.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_minigame2bluerectangle",

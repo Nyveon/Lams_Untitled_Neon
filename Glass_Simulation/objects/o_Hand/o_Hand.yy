@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Workshop",
-    "path": "folders/Objects/Workshop.yy",
+    "name": "Minigame 1",
+    "path": "folders/Objects/Minigame 1.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_Hand",

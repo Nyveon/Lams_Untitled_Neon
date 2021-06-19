@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Interface",
-    "path": "folders/Objects/Workshop/Interface.yy",
+    "path": "folders/Objects/Minigame 1/Interface.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_Done",

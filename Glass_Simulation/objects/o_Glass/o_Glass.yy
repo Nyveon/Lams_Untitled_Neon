@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Workshop",
-    "path": "folders/Objects/Workshop.yy",
+    "name": "Glass Tube",
+    "path": "folders/Objects/Minigame 1/Glass Tube.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_Glass",

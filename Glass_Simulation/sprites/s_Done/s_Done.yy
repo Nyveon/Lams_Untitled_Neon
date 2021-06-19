@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Interface",
-    "path": "folders/Sprites/Interface.yy",
+    "name": "Minigame 1",
+    "path": "folders/Sprites/Interface/Minigame 1.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_Done",

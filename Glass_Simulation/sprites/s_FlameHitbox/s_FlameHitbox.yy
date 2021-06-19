@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Hitboxes",
+    "path": "folders/Sprites/Hitboxes.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_FlameHitbox",

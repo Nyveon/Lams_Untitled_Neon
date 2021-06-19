@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "neonlights",
-    "path": "folders/Sprites/neonlights.yy",
+    "name": "Neon Lights",
+    "path": "folders/Sprites/Scenes/Neon Lights.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_neon1Backing",

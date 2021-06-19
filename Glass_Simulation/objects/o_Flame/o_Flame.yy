@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Blow torch",
-    "path": "folders/Objects/Workshop/Blow torch.yy",
+    "path": "folders/Objects/Minigame 1/Blow torch.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_Flame",
