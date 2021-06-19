@@ -11,7 +11,7 @@ if (o_Input.action_released) {
 	dragging = false
 }
 
-if (o_Input.action_pressed and o_Hand.current_tool == 0 and position_meeting(mouse_x, mouse_y, id)) {
+if (o_Input.action_pressed and o_Hand.current_tool == 0 and o_Hand.flame_hover_id != noone) {
 	dragging = true;
 	mouse_relative_x = mouse_x;
 	mouse_relative_y = mouse_y;
