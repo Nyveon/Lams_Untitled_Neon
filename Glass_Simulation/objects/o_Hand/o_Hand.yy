@@ -1,11 +1,14 @@
 {
   "spriteId": {
-    "name": "s_Hand",
-    "path": "sprites/s_Hand/s_Hand.yy",
+    "name": "s_HandOpen",
+    "path": "sprites/s_HandOpen/s_HandOpen.yy",
   },
   "solid": false,
-  "visible": false,
-  "spriteMaskId": null,
+  "visible": true,
+  "spriteMaskId": {
+    "name": "s_Hand_Hitboxes",
+    "path": "sprites/s_Hand_Hitboxes/s_Hand_Hitboxes.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

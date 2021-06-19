@@ -157,10 +157,6 @@ if (selected != -1) {
 					break;
 				}
 			}
-			
-			//nodes[| left_most].temperature = 800;
-			//nodes[| right_most].temperature = 800;
-			//nodes[| pivot].temperature = 800;
 
 			// BEZIER CURVE TIME AWW YEAHHH
 			var c1_x = nodes[| left_most].x;
@@ -172,24 +168,13 @@ if (selected != -1) {
 			var range = (right_most - left_most);
 			
 			for (var i = left_most + 1; i < right_most; i++) {
-				var n = nodes[| i];
-
-				//show_debug_message("c1: " + string(c1_x) + ", " + string(c1_y));
-				//show_debug_message("c2: " + string(c2_x) + ", " + string(c2_y));
-				//show_debug_message("c3: " + string(c3_x) + ", " + string(c3_y));
-				
+				var n = nodes[| i];	
 				var t = (i - left_most)/range;
 				var bx = (1 - t) * (1 - t) * c1_x + 2 * (1 - t) * t * c2_x + t * t * c3_x;
-				var by = (1 - t) * (1 - t) * c1_y + 2 * (1 - t) * t * c2_y + t * t * c3_y;
-				
+				var by = (1 - t) * (1 - t) * c1_y + 2 * (1 - t) * t * c2_y + t * t * c3_y;		
 				n.x = lerp(n.x, bx, 0.1);
 				n.y = lerp(n.y, by, 0.1);
-				//show_debug_message("t: " + string(t));
-				show_debug_message(string(bx) + " " + string(by));
 			}
-
-
-
 
 		}
 		

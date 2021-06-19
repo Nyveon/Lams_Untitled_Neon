@@ -3,7 +3,6 @@ hover = false; // If mouse is hovering over any node
 selected = -1; // Which node is selected
 mouse_relative_x = 0;
 mouse_relative_y = 0;
-rotation_speed = 3;
 #endregion
 
 #region Tube and nodes
@@ -55,7 +54,7 @@ function Node(value_x, value_y, value_id) constructor {
 
 nodes = ds_list_create();
 // Debug glass tube
-for (var i = 0; i < 200; i++) {
+for (var i = 0; i < 250; i++) {
 	ds_list_add(nodes, new Node((room_width/2) - 144 + (joint_distance*i), room_height/2, i));
 }
 #endregion
