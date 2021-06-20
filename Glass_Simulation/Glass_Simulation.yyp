@@ -160,6 +160,7 @@
     {"id":{"name":"s_Pull","path":"sprites/s_Pull/s_Pull.yy",},"order":2,},
     {"id":{"name":"o_Glow","path":"objects/o_Glow/o_Glow.yy",},"order":2,},
     {"id":{"name":"s_HandStretch","path":"sprites/s_HandStretch/s_HandStretch.yy",},"order":4,},
+    {"id":{"name":"s_olderSuYing","path":"sprites/s_olderSuYing/s_olderSuYing.yy",},"order":5,},
     {"id":{"name":"o_Checker_Node","path":"objects/o_Checker_Node/o_Checker_Node.yy",},"order":2,},
     {"id":{"name":"o_Credit_Item","path":"objects/o_Credit_Item/o_Credit_Item.yy",},"order":0,},
   ],
