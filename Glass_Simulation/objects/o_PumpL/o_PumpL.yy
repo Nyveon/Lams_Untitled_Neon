@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "s_minigame2bluerectangle",
-    "path": "sprites/s_minigame2bluerectangle/s_minigame2bluerectangle.yy",
+    "name": "s_minigame2Valve1",
+    "path": "sprites/s_minigame2Valve1/s_minigame2Valve1.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "o_Pump",
+    "path": "objects/o_Pump/o_Pump.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -21,7 +24,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_Redline","path":"objects/o_Redline/o_Redline.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -30,7 +33,7 @@
     "path": "folders/Objects/Minigame 2.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_Blue_Goal",
+  "name": "o_PumpL",
   "tags": [],
   "resourceType": "GMObject",
 }

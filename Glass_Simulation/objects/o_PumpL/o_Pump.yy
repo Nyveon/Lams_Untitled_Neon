@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_minigame2bluerectangle",
-    "path": "sprites/s_minigame2bluerectangle/s_minigame2bluerectangle.yy",
+    "name": "s_minigame2Valve2",
+    "path": "sprites/s_minigame2Valve2/s_minigame2Valve2.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,9 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_Redline","path":"objects/o_Redline/o_Redline.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -30,7 +28,7 @@
     "path": "folders/Objects/Minigame 2.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_Blue_Goal",
+  "name": "o_Pump",
   "tags": [],
   "resourceType": "GMObject",
 }
