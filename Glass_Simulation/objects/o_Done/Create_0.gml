@@ -4,8 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
-hotkey = 3;
 
-button_action = function() {
-	o_Hand.current_tool = 2;
+draw_hotkey = function() {
+	return;
 }
+

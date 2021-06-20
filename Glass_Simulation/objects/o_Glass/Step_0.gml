@@ -161,11 +161,19 @@ if (selected != -1) {
 			// BEZIER CURVE TIME AWW YEAHHH
 			var c1_x = nodes[| left_most].x;
 			var c1_y = nodes[| left_most].y;
-			var c2_x = mouse_x;
-			var c2_y = mouse_y;
 			var c3_x = nodes[| right_most].x;
 			var c3_y = nodes[| right_most].y;
 			var range = (right_most - left_most);
+			
+			// Midpoin to limit the size of the curve
+			// some of these do NOT need to be local
+			var mid_x = (c1_x + c3_x)/2;
+			var mid_y = (c1_y + c3_y)/2;
+			var range_dist = point_distance(c1_x, c1_y, c3_x, c3_y);
+			var bezier_proportion = range_dist/2;
+			var mouse_dir = point_direction(mid_x, mid_y, mouse_x, mouse_y);
+			var c2_x = mid_x + lengthdir_x(bezier_proportion, mouse_dir);
+			var c2_y = mid_y +lengthdir_y(bezier_proportion, mouse_dir);
 			
 			for (var i = left_most + 1; i < right_most; i++) {
 				var n = nodes[| i];	

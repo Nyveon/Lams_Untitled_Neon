@@ -1,4 +1,5 @@
 if (glowing) {
+	draw_hotkey();
 	draw_self();
 	surface_set_target(o_Glow.glow_pass_surface);
 	draw_self();
@@ -11,4 +12,6 @@ if (glowing) {
 		draw_self();
 		shader_reset();
 	}
+	draw_hotkey();
 }
+
