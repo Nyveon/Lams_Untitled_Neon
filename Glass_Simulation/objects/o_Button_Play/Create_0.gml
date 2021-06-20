@@ -5,5 +5,5 @@
 event_inherited();
 
 button_action = function() {
-	room_goto(r_M_1_L); //temporary
+	room_goto(r_Shop); //temporary
 }
