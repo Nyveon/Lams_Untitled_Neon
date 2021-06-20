@@ -10,3 +10,4 @@ button_action = function() {
 	o_Hand.current_tool = 0;
 }
 
+glow_on_mouse = false;

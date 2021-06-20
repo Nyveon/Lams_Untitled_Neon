@@ -9,3 +9,5 @@ hotkey = 3;
 button_action = function() {
 	o_Hand.current_tool = 2;
 }
+
+glow_on_mouse = false;

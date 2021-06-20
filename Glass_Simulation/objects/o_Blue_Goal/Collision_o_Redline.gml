@@ -1,1 +1,1 @@
-o_Fullness.fullness += 0.5;
+o_Fullness.fullness += 0.5; // HOW MUCH TOUCHING THE TING ADDS TO THE METER

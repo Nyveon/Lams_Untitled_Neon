@@ -5,4 +5,4 @@ instance_create_layer(0,0, "Instances", o_Input);
 instance_create_layer(0,0, "Instances", o_Main);
 
 
-room_goto(r_Pump); // Change this for room selection
+room_goto(r_Title); // Change this for room selection
