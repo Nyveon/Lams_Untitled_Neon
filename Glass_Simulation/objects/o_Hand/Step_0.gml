@@ -10,9 +10,9 @@ flame_hover_id = instance_place(x, y, o_Flame);
 
 switch (current_tool) {
 	case 0:
-		o_Drag.glowing = true;
-		o_Pull.glowing = false;
-		o_Rotate.glowing = false;
+		o_Button_Drag.glowing = true;
+		o_Button_Pull.glowing = false;
+		o_Button_Rotate.glowing = false;
 		sprite_index = s_HandOpen;
 		
 		if (hover_id != noone || o_Glass.selected != -1 || flame_hover_id != noone || o_Flame.dragging) {
@@ -24,9 +24,9 @@ switch (current_tool) {
 		
 		break;
 	case 1:
-		o_Drag.glowing = false;
-		o_Pull.glowing = false;
-		o_Rotate.glowing = true;
+		o_Button_Drag.glowing = false;
+		o_Button_Pull.glowing = false;
+		o_Button_Rotate.glowing = true;
 		sprite_index = s_HandRotate;
 		
 		if (hover_id != noone || o_Glass.selected != -1) {
@@ -35,9 +35,9 @@ switch (current_tool) {
 		
 		break;
 	case 2:
-		o_Drag.glowing = false;
-		o_Pull.glowing = true;
-		o_Rotate.glowing = false;
+		o_Button_Drag.glowing = false;
+		o_Button_Pull.glowing = true;
+		o_Button_Rotate.glowing = false;
 		sprite_index = s_HandStretch;
 	
 		if (hover_id != noone) {

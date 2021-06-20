@@ -1,5 +1,9 @@
-if (glowing) {
+// Draw hotkey letter/number
+if (hotkey != 0) {
 	draw_hotkey();
+}
+
+if (glowing) {
 	draw_self();
 	surface_set_target(o_Glow.glow_pass_surface);
 	draw_self();
@@ -12,6 +16,5 @@ if (glowing) {
 		draw_self();
 		shader_reset();
 	}
-	draw_hotkey();
 }
 

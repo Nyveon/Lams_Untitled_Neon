@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "scoringScreen",
-    "path": "folders/Sprites/Interface/scoringScreen.yy",
+    "name": "Scoring Screen",
+    "path": "folders/Sprites/Interface/Scoring Screen.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_redStar",

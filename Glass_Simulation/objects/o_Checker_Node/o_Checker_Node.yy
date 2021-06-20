@@ -31,8 +31,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Minigame 1",
-    "path": "folders/Objects/Minigame 1.yy",
+    "name": "Glass Tube",
+    "path": "folders/Objects/Minigame 1/Glass Tube.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_Checker_Node",

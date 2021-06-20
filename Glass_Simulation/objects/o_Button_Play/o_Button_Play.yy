@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_Done",
-    "path": "sprites/s_Done/s_Done.yy",
+    "name": "s_playButton",
+    "path": "sprites/s_playButton/s_playButton.yy",
   },
   "solid": false,
   "visible": true,
@@ -29,11 +29,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Interface",
-    "path": "folders/Objects/Minigame 1/Interface.yy",
+    "name": "Title Screen",
+    "path": "folders/Objects/Title Screen.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_Done",
+  "name": "o_Button_Play",
   "tags": [],
   "resourceType": "GMObject",
 }

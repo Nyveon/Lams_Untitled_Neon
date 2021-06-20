@@ -16,7 +16,7 @@ function calculate_score(){
 		//other.total_distance += min(p*p*p, other.max_d); // max distance to consider is 200 away
 		other.total_distance += min(p*p, other.max_d)
 		if !is_lit {
-			other.total_distance += other.max_d1;
+			other.total_distance += other.max_d1*4;
 		}
 	}
 	

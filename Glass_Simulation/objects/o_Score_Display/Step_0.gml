@@ -1,3 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
+// Increment flicker animation tick
 flicker_ticks += flicker_speed;

@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Cursors",
-    "path": "folders/Sprites/Interface/Minigame 1/Cursors.yy",
+    "path": "folders/Sprites/Cursors.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_HandRotate",

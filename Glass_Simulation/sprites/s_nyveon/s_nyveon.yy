@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "CreditScreen",
-    "path": "folders/Sprites/Scenes/CreditScreen.yy",
+    "name": "Credit_Screen",
+    "path": "folders/Sprites/Scenes/Credit_Screen.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_nyveon",

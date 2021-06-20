@@ -1,13 +1,14 @@
 // Visual effects
 mouse_over = false;
 glowing = false;
+glow_on_mouse = true;
 
 // Override this function in child instances
 button_action = function() {
 	return; 
 }
 
-hotkey = "0";
+hotkey = 0;
 x_offset = -17;
 y_offset = -12; // 21 br
 

@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "s_Reset",
-    "path": "sprites/s_Reset/s_Reset.yy",
+    "name": "s_victoryarcana",
+    "path": "sprites/s_victoryarcana/s_victoryarcana.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "o_Button",
-    "path": "objects/o_Button/o_Button.yy",
+    "name": "o_Credit_Item",
+    "path": "objects/o_Credit_Item/o_Credit_Item.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -29,11 +29,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Interface",
-    "path": "folders/Objects/Minigame 1/Interface.yy",
+    "name": "Credits",
+    "path": "folders/Objects/Credits.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_Reset",
+  "name": "o_Credit_Victoryarcana",
   "tags": [],
   "resourceType": "GMObject",
 }
