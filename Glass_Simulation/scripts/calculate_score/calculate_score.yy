@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "start_minigame_1",
+  "name": "calculate_score",
   "tags": [],
   "resourceType": "GMScript",
 }

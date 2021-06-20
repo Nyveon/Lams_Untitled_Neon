@@ -16,6 +16,7 @@ button_action = function() {
 	// Room L
 	if (room == r_M_1_L) {
 		room_goto(r_Scoring_Screen);
+		calculate_score();
 	}
 	
 }
