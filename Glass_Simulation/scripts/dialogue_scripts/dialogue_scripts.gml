@@ -5,5 +5,5 @@ function dialogue_scripts(){
 }
 
 function dd_1() {
-	room_goto(r_M_1_L);
+	room_goto(r_Workshop);
 }

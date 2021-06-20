@@ -4,7 +4,7 @@ function start_minigame_1(current_letter){
 	anchor_x = 140;
 	anchor_y = 62;
 
-	node_number = array_length_1d(current_letter)
+	node_number = array_length(current_letter)
 	show_debug_message("Nodes for objetive: " + string(node_number));
 
 	show_debug_message(current_letter[0][1]);

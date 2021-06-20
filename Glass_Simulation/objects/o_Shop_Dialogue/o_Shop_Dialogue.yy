@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Scene 1",
+    "path": "folders/Objects/Scene 1.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_Shop_Dialogue",
