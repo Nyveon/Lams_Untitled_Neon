@@ -12,7 +12,7 @@ var letter_M = [[0,0],[1,0],[2,0],[3,0],[4,0],[5,0],[6,0],[7,0],[8,0],[9,0],[10,
 
 
 var current_letter = letter_S;
-var node_number = array_length_1d(current_letter)
+node_number = array_length_1d(current_letter)
 show_debug_message("Nodes for objetive: " + string(node_number));
 
 show_debug_message(current_letter[0][1]);
@@ -20,6 +20,15 @@ show_debug_message(current_letter[0][1]);
 for (var i = 0; i < node_number; i++) {
 	var xx = current_letter[i][0];
 	var yy = current_letter[i][1];
-	var instance = instance_create_layer(anchor_x + xx, anchor_y + yy, "Instances", o_Checker_Node);
+	var instance = instance_create_layer(anchor_x + xx, anchor_y + yy, "Instances_Back", o_Checker_Node);
 	instance.index = i;
+}
+
+// Glass bar for level
+var glass = instance_create_layer(x, y, "Instances", o_Glass);
+with glass {
+	//Make DA TUBE
+	for (var i = 0; i < other.node_number*1.2; i++) {
+		ds_list_add(nodes, new Node((room_width/2) - 144 + (joint_distance*i), room_height/2, i));
+	}
 }

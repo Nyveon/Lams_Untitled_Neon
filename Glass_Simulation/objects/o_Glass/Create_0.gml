@@ -52,11 +52,12 @@ function Node(value_x, value_y, value_id) constructor {
 }
 
 
+
 nodes = ds_list_create();
 // Debug glass tube
-for (var i = 0; i < 250; i++) {
-	ds_list_add(nodes, new Node((room_width/2) - 144 + (joint_distance*i), room_height/2, i));
-}
+//for (var i = 0; i < 250; i++) {
+//	ds_list_add(nodes, new Node((room_width/2) - 144 + (joint_distance*i), room_height/2, i));
+//}
 #endregion
 
 #region Animation and visual
