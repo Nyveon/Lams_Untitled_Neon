@@ -3,17 +3,23 @@
 if(instance_number(obj_textevent)>1 or instance_number(obj_textbox)>1){ instance_destroy(); exit; }
 
 //-----------Customise (FOR USER)
-interact_key		= ord("E");
+interact_key		= mb_left;
 up_key				= vk_up;		//for dialogue choices
 down_key			= vk_down;		//for dialogue choices
 
 scale				= 1;
 x_buffer			= 10 * scale;
-y_buffer			= 7 * scale;
+y_buffer			= 4 * scale;
 
-portrait_frame		= s_Portrait_Frame;
-dialogue_box		= s_Dialogue_Box;
-finished_effect		= s_None_Pixel;
+
+if (room = r_Intro) {
+	portrait_frame		= s_None_Pixel;
+	dialogue_box		= s_Dialogue_Box_Wide;
+} else {
+	portrait_frame		= s_Portrait_Frame;
+	dialogue_box		= s_Dialogue_Box;
+}
+finished_effect		= s_dialogueArrow;
 emote_sprite		= s_None_Pixel;
 
 choice_snd_effect	= snd_moveselect;
@@ -55,8 +61,11 @@ finishede_spd	= (sprite_get_speed(spr_dialoguefinished)/room_speed);
 pos_x			= (gb_diff/2)+(portraitWidth/2);
 pos_y			= gui_height-boxHeight-16;
 
+
 finishede_x		= pos_x + boxWidth - x_buffer;
 finishede_y		= pos_y + boxHeight - y_buffer;
+
+
 
 letter			= 0;
 charCount		= 0;

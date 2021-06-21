@@ -10,5 +10,5 @@ i++
 line(id, "First we need to shape the glass tube that will become the neon light.");
 i++
 line(id, "Try to use the hand tool to move the glass around. Drag the glass onto the template.");
-myScripts[i] = [dd_1];
+myScripts[i] = [shop_1];
 

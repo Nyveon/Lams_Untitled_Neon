@@ -26,3 +26,18 @@ line = function(_speaker, _text) {
 	myTextCol[i] = [1, _speaker.myColour];
 	mySpeaker[i] = _speaker;
 }
+
+
+initiate_conversation = function() {
+	if(myTextbox != noone){ 
+		if(!instance_exists(myTextbox)){ myTextbox = noone; exit; }
+	}
+	//if I haven't already created my textbox, make one:
+	else {
+		if(instance_exists(obj_textbox)){ exit; }	//exit if a textbox already exists
+		event_user(0);								//if you need variables to update for text
+			
+		//Hand over variables
+		create_dialogue(myText, mySpeaker, myEffects, myTextSpeed, myTypes, myNextLine, myScripts, myTextCol, myEmotion, myEmote);
+	}
+}

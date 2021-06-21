@@ -4,6 +4,46 @@ function dialogue_scripts(){
 	return;
 }
 
-function dd_1() {
+// Intro cutscene function for switching off the lights
+function intro(_i) {
+	switch (_i) {
+		case 0:
+			o_Cutsign_1.glowing = false;
+			o_Cutsign_2.flickering = true;
+			break;
+		case 1:
+			o_Cutsign_2.glowing = false;
+			o_Cutsign_3.flickering = true;
+			o_Cutsign_9.flickering = true;
+			break;
+		case 2:
+			o_Cutsign_3.glowing = false;
+			o_Cutsign_9.glowing = false;
+			o_Cutsign_4.flickering = true;
+			break;
+		case 3:
+			o_Cutsign_4.glowing = false;
+			o_Cutsign_5.flickering = true;
+			break;
+		case 4:
+			o_Cutsign_5.glowing = false;
+			o_Cutsign_6.flickering = true;
+			o_Cutsign_7.flickering = true;
+			break;
+		case 5:
+			o_Cutsign_6.glowing = false;
+			o_Cutsign_7.glowing = false;
+			o_Cutsign_8.flickering = true;
+			break;
+		case 6:
+			o_Cutsign_8.glowing = false;
+			var instance = instance_create_layer(0, 0, "Text", o_Fade_Out);
+			instance.target_room = r_Dialogue_1;
+			break;
+	}
+	return;
+}
+
+function shop_1() {
 	room_goto(r_Workshop);
 }

@@ -2,6 +2,8 @@
 var cvoice = voice[page][irandom(array_length(voice[page])-1)];
 audio_sound_pitch(cvoice, random_range(0.9, 1.1));
 
+draw_set_valign(fa_top);
+
 //Draw textbox
 draw_sprite_ext(dialogue_box, 0, pos_x,pos_y, scale,scale, 0, c_white, 1);
 
@@ -237,7 +239,7 @@ else {
 		var shift = sin((t+cc)*pi*freq/room_speed)*amplitude;
 		finishede_count += finishede_spd;
 		if(finishede_count >= finishede_num){ finishede_count = 0; }
-		draw_sprite(finished_effect, finishede_count, finishede_x + shift, finishede_y);
+		draw_sprite(finished_effect, finishede_count, finishede_x, finishede_y - shift);
 	}
 	#endregion
 }

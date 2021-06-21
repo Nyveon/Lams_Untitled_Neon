@@ -4,7 +4,7 @@
 
 #region TYPE 0: NORMAL
 if(type[page] == 0){
-	if(keyboard_check_pressed(interact_key)){
+	if(o_Input.action_pressed){
 
 		//If we haven't "typed out" all the letters, immediately "type out" all letters (works as a "skip")
 		if(charCount < str_len){
@@ -12,7 +12,7 @@ if(type[page] == 0){
 		}
 		
 		//Only increase page IF page + 1,is less than the total number of entries
-		else if(page+1 < array_length_1d(text)){
+		else if(page+1 < array_length(text)){
 			event_perform(ev_other, ev_user0);
 			switch(nextline[page]){
 				case -1: instance_destroy();	exit;
@@ -29,7 +29,7 @@ if(type[page] == 0){
 #region TYPE 1: DIALOGUE CHOICE
 else {
 	if(chosen) exit;
-	if(keyboard_check_pressed(interact_key)){ 
+	if(o_Input.action_pressed){ 
 		chosen = true; 
 		alarm[2] = 10; 
 		audio_play_sound(select_snd_effect, priority_snd_effect, false);

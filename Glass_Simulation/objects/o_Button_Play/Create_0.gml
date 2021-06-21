@@ -5,5 +5,5 @@
 event_inherited();
 
 button_action = function() {
-	room_goto(r_Dialogue_1); //temporary
+	room_goto(r_Intro); //temporary
 }
