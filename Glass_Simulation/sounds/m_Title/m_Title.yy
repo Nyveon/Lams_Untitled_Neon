@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "d_Title.ogg",
+  "soundFile": "m_Title.ogg",
   "duration": 76.04462,
   "parent": {
-    "name": "Unimplemented",
-    "path": "folders/Sounds/Unimplemented.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
   "resourceVersion": "1.0",
-  "name": "d_Title",
+  "name": "m_Title",
   "tags": [],
   "resourceType": "GMSound",
 }

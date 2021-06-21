@@ -1,6 +1,8 @@
 switch (level) {
 	// --Main menu, intro cutscene and first dialogue--
 	case "start":
+		play_track(0);
+	
 		if (room == r_Dialogue_1) {
 			var fade = instance_create_layer(0, 0, "Text", o_Fade_In);
 			fade.target_action = function() {
@@ -9,10 +11,13 @@ switch (level) {
 			fade.my_text = "15 years ago...";
 		}
 		
+
+		
 		break;
 	// -- Tutorials --
 	case "tutorial 1": // --Move tutorial
 		if (room = r_Tutorial_Workshop) {
+			play_track(1);
 			
 			var letter = letter_line;
 			var ll = array_length(letter)
@@ -151,5 +156,9 @@ switch (level) {
 		if (room == r_Dialogue_1) { // Tutorial ended	
 			leave_tutorial();			
 		}
+		break;
+	case "level 1":
+		play_track(2);
+	
 		break;
 }
