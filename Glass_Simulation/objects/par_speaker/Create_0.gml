@@ -21,10 +21,39 @@ myPortraitIdle_y	= -1;
 reset_dialogue_defaults();
 
 
-line = function(_speaker, _text) {
-	myText[i] = _text;
-	myTextCol[i] = [1, _speaker.myColour];
-	mySpeaker[i] = _speaker;
+line = function(__speaker, _text) {
+	var pre_text = _text;
+	var string_len = string_length(pre_text);
+	var final_text = "";
+
+	myTextCol[i] = [1, __speaker.myColour];
+	var current_index = 1;
+	
+	for (var j = 1; j <= string_len; j++) {
+		var ch = string_char_at(pre_text, j);
+		if (ch != "|") {
+			final_text += ch;
+		} else {
+			j++;
+			ch = string_char_at(pre_text, j);
+			switch ch {
+				case "w": // White text
+					array_push(myTextCol[i], current_index);
+					array_push(myTextCol[i], c_white);
+					break;
+				case "d": // Default color
+					array_push(myTextCol[i], current_index);
+					array_push(myTextCol[i], myColour);
+					break;				
+			}
+			current_index -= 1;
+		}
+		current_index++;
+	}
+	
+	
+	myText[i] = final_text;
+	mySpeaker[i] = __speaker;
 }
 
 

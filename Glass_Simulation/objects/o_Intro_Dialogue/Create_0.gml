@@ -11,6 +11,4 @@ myName = ""
 
 myColour = c_ltgray;
 
-state = 0;
-
 initiate_conversation();
