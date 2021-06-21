@@ -5,5 +5,6 @@
 event_inherited();
 
 button_action = function() {
+	audio_play_sound(d_Start, 2, 0);
 	room_goto(r_Intro); //temporary
 }

@@ -6,6 +6,8 @@ function dialogue_scripts(){
 
 // Intro cutscene function for switching off the lights
 function intro(_i) {
+	audio_sound_pitch(d_Off, random_range(0.8,1.1));
+	audio_play_sound(d_Off, 1, 0);
 	switch (_i) {
 		case 0:
 			o_Cutsign_1.glowing = false;

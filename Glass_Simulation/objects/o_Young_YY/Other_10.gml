@@ -12,7 +12,7 @@ reset_dialogue_defaults();
 i = 0;
 switch (o_Main.level) {
 	case "start":
-		line(o_Young_SY, "Neon lights are so |4pretty|0. Can you show me how to make one, Yeye?");
+		line(o_Young_SY, "|8Neon lights|0 are so |4pretty|0. Can you show me how to make one, Yeye?");
 		myEmotion[i] = 1;
 		i++
 		line(id, "Of course. It's about time for you to learn the family business.");
@@ -21,7 +21,7 @@ switch (o_Main.level) {
 		line(o_Young_SY, "Hooray! Thank you, Yeye. So what do we do first?");
 		myEmotion[i] = 0;
 		i++
-		line(id, "First we need to shape the glass tube that will become the neon light.");
+		line(id, "First we need to shape the glass tube that will become the |8neon light.|0");
 		myEmotion[i] = 0;
 		i++
 		line(id, "Try use the |2hand tool|0 to move the glass around. Drag the glass onto the template.");

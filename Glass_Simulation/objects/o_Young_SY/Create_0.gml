@@ -8,7 +8,7 @@ myPortrait			= s_YSY_Portrait;
 myVoice = [d_Woman_7]; // Younger
 //myVoice = [d_Woman_6]; // Older
 myName				= "Siu-Ying";
-myColour = make_colour_rgb(70, 152, 219);
+myColour = make_colour_rgb(31, 187, 210);
 
 
 // Emotions:

@@ -1,6 +1,7 @@
 ds_list_destroy(touching);
 touching = ds_list_create();
 old_num = num;
+old_dragging = dragging;
 
 if o_Hand.current_tool == 0 { // only heat when in drag mode
 	sprite_index = s_Torch;
@@ -56,5 +57,9 @@ if dragging {
 	y = clamp(y + delta_y, 26, 160);
 }
 
-
+if (dragging and !old_dragging) {
+	audio_play_sound(d_Grab_Burner, 2, 0);
+} else if (!dragging and old_dragging) {
+	audio_play_sound(d_Release_Burner, 2, 0);
+}
 

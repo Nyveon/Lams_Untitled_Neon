@@ -26,7 +26,8 @@ line = function(__speaker, _text) {
 	var string_len = string_length(pre_text);
 	var final_text = "";
 
-	myTextCol[i] = [1, __speaker.myColour];
+	//myTextCol[i] = [1, __speaker.myColour];
+	myTextCol[i] = []
 	myEffects[i] = [];
 	var current_index = 1;
 	
@@ -46,13 +47,13 @@ line = function(__speaker, _text) {
 					array_push(myTextCol[i], current_index, c_red);
 					break;
 				case "g": // Green text
-					array_push(myTextCol[i], current_index, c_green);
+					array_push(myTextCol[i], current_index, c_lime);
 					break;
 				case "b": // Blue text
-					array_push(myTextCol[i], current_index, c_blue);
+					array_push(myTextCol[i], current_index, c_aqua);
 					break;
-				case "p": // Purple text
-					array_push(myTextCol[i], current_index, c_purple);
+				case "p": // Pink text
+					array_push(myTextCol[i], current_index, c_fuchsia);
 					break;
 				case "d": // Default color
 					array_push(myTextCol[i], current_index, myColour);
@@ -91,8 +92,18 @@ line = function(__speaker, _text) {
 			current_index -= 1;
 		}
 		current_index++;
-	}
+	} 
 	
+	// Default color
+	if (array_length(myTextCol[i]) > 0) {
+		if (myTextCol[i][0] != 1) {
+			//array_push(myTextCol[i], 1, myColour);
+			show_debug_message("Here");
+			array_insert(myTextCol[i], 0, 1, myColour);
+		}
+	} else {
+		myTextCol[i] = [1, __speaker.myColour];
+	}
 	
 	myText[i] = final_text;
 	mySpeaker[i] = __speaker;

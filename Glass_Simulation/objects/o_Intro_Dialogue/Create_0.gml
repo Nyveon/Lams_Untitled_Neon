@@ -6,7 +6,7 @@ event_inherited();
 
 
 myPortrait = s_None_Pixel;
-myVoice = [d_Grab]; // change for a tick later
+myVoice = [d_Click]; // change for a tick later
 myName = ""
 
 myColour = c_ltgray;

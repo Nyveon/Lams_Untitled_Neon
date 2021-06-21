@@ -17,6 +17,7 @@ if checking {
 		tutorial_score += 1;
 	}
 	if (tutorial_score > 60) {
+		audio_play_sound(d_Tutorial_Success, 2, 0);
 		checking = false;
 		alarm[0] = 30;
 		var instance = instance_create_layer(0, 0, "GUI", o_Fade_Out);

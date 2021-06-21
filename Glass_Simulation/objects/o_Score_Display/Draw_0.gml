@@ -22,12 +22,18 @@ if (stars_displaying && displayed_stars<=4) {
 	draw_set_halign(fa_middle);
 	draw_set_valign(fa_center);
 	draw_set_font(f_Silver14);
-	draw_text(x, y + 48, "Precision: " + string(displayed_score_p) + " points.");
+	draw_text(x, y + 48, "Score: " + string(displayed_score_p) + " points.");
 	//draw_text(x, y + 72, "r: " + string(o_Main.score_precision_ratio));
 	//draw_text(x, y + 64, "Time: " + string(displayed_score_t));
 	
 	// Update displayed scores
 	displayed_score_p = floor(min(displayed_score_p + score_increment, score_p));
+	
+	if (displayed_score_p < score_p) {
+		if (!audio_is_playing(d_Score_Ticker)) {
+			audio_play_sound(d_Score_Ticker, 5, 0);
+		}
+	}
 	//displayed_score_t = floor(min(displayed_score_t + score_increment, score_t));
 	score_increment *= 1.1;
 }

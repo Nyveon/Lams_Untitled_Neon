@@ -8,6 +8,7 @@ hitbox = instance_create_layer(x, y, "Instances", o_FlameHitbox);
 
 // Dragging
 dragging = false;
+old_dragging = false;
 mouse_relative_x = 0;
 mouse_relative_y = 0;
 muted = false;

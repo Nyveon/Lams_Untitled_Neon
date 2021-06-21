@@ -10,5 +10,5 @@ myPortrait			= s_YYY_Portrait;
 myVoice				= [d_Man_2, d_Man_5];
 myName				= "Mr. Lam";
 
-myColour = make_colour_rgb(70, 219, 80);
+myColour = make_colour_rgb(86, 155, 44);
 
