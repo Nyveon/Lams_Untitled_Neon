@@ -25,7 +25,7 @@ function create_dialogue() {
 	var _speaker, text_len;
 
 	//If Text or Speaker aren't arrays (single line input), make them arrays 
-	if(is_array(_text))		{ text_len = array_length_1d(_text); }
+	if(is_array(_text))		{ text_len = array_length(_text); }
 	else					{ text_len = 1; _text[0] = _text;  }
 	if(!is_array(arg[1]))	{ _speaker = array_create(text_len, id); }
 	else					{ _speaker = arg[1]; }

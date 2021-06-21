@@ -157,6 +157,14 @@ switch (level) {
 			leave_tutorial();			
 		}
 		break;
+	case "cutscene 1":
+		if (room == r_Dialogue_1) {
+			var fade = instance_create_layer(0, 0, "Text", o_Fade_In);
+			fade.target_action = function() {
+				o_Young_YY.initiate_conversation();
+			}
+			fade.my_text = "10 years ago...";
+		}
 	case "level 1":
 		play_track(2);
 	

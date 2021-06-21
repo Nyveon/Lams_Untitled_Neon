@@ -208,7 +208,8 @@ else {
 				var shift = sin(so*pi*freq/room_speed);
 				var mv = charSize/2;
 				draw_set_valign(fa_middle); draw_set_halign(fa_middle);
-				draw_text_transformed_color(xx + (cx*charSize)+mv, yy+(cy*stringHeight)+(stringHeight/2), letter, 1, 1, shift*20, col, col, col, col, 1);
+				//draw_text_transformed_color(xx + (cx*charSize)+mv, yy+(cy*stringHeight)+(stringHeight/2), letter, 1, 1, shift*20, col, col, col, col, 1);
+				draw_text_transformed_color(xx + (cx*charSize)+mv, yy+(cy*17)+(17/2), letter, 1, 1, shift*20, col, col, col, col, 1);
 				draw_set_valign(fa_top); draw_set_halign(fa_left);
 				break;
 				

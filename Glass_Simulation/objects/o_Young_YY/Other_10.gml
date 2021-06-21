@@ -97,6 +97,60 @@ switch (o_Main.level) {
 		myEmotion[i] = 1;
 		myScripts[i] = [shop_1, 6];
 		i++	
+	case "cutscene 1":
+		line(o_Young_SY, "Yeye! I'm going out. I'll be back later.");
+		myEmotion[i] = 1;
+		i++;
+		
+		line(id, "Where are you going? It's Saturday. You should practice making more signs with me.");
+		myEmotion[i] = 0;
+		i++;
+		
+		line(o_Young_SY, "I'm going to hang out with Fei Fei and Jessica, remember? Fei Fei got a new game and I want to try it out. ");
+		myEmotion[i] = 0;
+		i++;
+		line(o_Young_SY, "It's a game about trading resources like sheep and bricks.");
+		myEmotion[i] = 0;
+		i++;
+		line(o_Young_SY, "And she got it all the way from Germany! How cool is that?");
+		myEmotion[i] = 0;
+		i++;
+		
+		line(id, "Why do you play so many games, Siu-Ying? You should be studying for school or studying how to make signs with me.");
+		myEmotion[i] = 0;
+		i++;	
+		line(id, "We have a big order from Mr. Chang. Good opportunity for you to practice.");
+		myEmotion[i] = 0;
+		i++;
+		
+		line(o_Young_SY, "But Yeye, I don't want to make signs. It's not very fun and I'm not exactly good at it.");
+		myEmotion[i] = 2;
+		i++;
+		
+		line(id, "Practice makes perfect, Siu-Ying. If you practice, you will get better and become a master. Then you can take over the shop from me.");
+		myEmotion[i] = 0;
+		i++;
+		
+		line(o_Young_SY, "Why do I have to take over the shop?");
+		myEmotion[i] = 2;
+		i++;
+		
+		line(id, "Are you going to become a doctor?");
+		myEmotion[i] = 0;
+		i++;
+		
+		line(o_Young_SY, "No, I can't stand blood... Makes me |5sick|0 just thinking about it!");
+		myEmotion[i] = 2;
+		i++;
+		
+		line(id, "Okay, then you'll take over the shop. Problem solved.");
+		myEmotion[i] = 1;
+		i++;		
+		
+		line(o_Young_SY, "...");
+		myEmotion[i] = 2;
+		i++;
+
 }
 
 

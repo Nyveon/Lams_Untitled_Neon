@@ -68,9 +68,9 @@ function shop_1(_i) {
 			room_goto(r_Pump);
 			return;
 		case 6:
-			o_Main.level = "level 1";
+			o_Main.level = "cutscene 1";
 			var instance = instance_create_layer(0, 0, "Text", o_Fade_Out);
-			instance.target_room = r_Dialogue_2;
+			instance.target_room = r_Dialogue_1;
 			return;
 	}
 	room_goto(r_Tutorial_Workshop);

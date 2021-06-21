@@ -10,6 +10,10 @@ myVoice = [d_Woman_7]; // Younger
 myName				= "Siu-Ying";
 myColour = make_colour_rgb(31, 187, 210);
 
+// Grow a bit
+if o_Main.level == "cutscene 1" {
+	image_yscale = 1.2;
+}
 
 // Emotions:
 // 0 = very happy
