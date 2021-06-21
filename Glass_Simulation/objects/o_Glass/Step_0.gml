@@ -66,6 +66,13 @@ if (selected != -1) {
 			var n = nodes[| i];
 			n.set_position(n.x + (mouse_dx), n.y + (mouse_dy));
 		}
+		
+		// Woosh sound (not convincing enough, won't implement)
+		//if (abs(mouse_dx) + abs(mouse_dy) > 10) {
+		//	if (!audio_is_playing(d_Woosh)) {
+		//		audio_play_sound(d_Woosh, 6, 0);
+		//	}
+		//}
 	} else if (o_Hand.current_tool == 1) {					// ROTATING
 		// Find groups of heated nodes
 		heated_group_midpoints = ds_list_create();

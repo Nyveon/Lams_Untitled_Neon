@@ -11,8 +11,6 @@ v_offset = -6;
 // 0 score is impossible
 score_p = o_Main.score_precision;
 displayed_score_p = 0;
-score_t = o_Main.score_time;
-displayed_score_t = 0;
 score_increment = 17;
 
 
@@ -26,10 +24,10 @@ flicker_ticks = 0;
 
 // Stars and star display
 stars = floor((o_Main.score_precision_ratio)*6) //max(0,5-floor((score_p+0.1)/100)); 
-//stars = 5; //debug stars
+//stars = 2; //debug stars
 displayed_stars = 0;
-star_time = 30;
-star_time_increment = 1.5;
+star_time = 40;
+star_time_increment = 1.2;
 alarm[0] = star_time;
 stars_displaying = true;
 
