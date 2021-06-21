@@ -72,6 +72,17 @@ function shop_1(_i) {
 			var instance = instance_create_layer(0, 0, "Text", o_Fade_Out);
 			instance.target_room = r_Dialogue_1;
 			return;
+		case 7:
+			o_Main.level = "level 1";
+			var instance = instance_create_layer(0, 0, "Text", o_Fade_Out);
+			instance.target_room = r_Dialogue_2;
+			return;			
 	}
 	room_goto(r_Tutorial_Workshop);
+}
+
+function shop_2() {
+	var instance = instance_create_layer(0, 0, "Text", o_Fade_Out);
+	instance.target_room = r_Workshop;
+	return;	
 }

@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Scene 1",
-    "path": "folders/Objects/Scene 1.yy",
+    "name": "NPCs",
+    "path": "folders/Objects/NPCs.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_Lam_Sign",

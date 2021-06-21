@@ -17,6 +17,18 @@ button_action = function() {
 		case "tutorial 6":
 			room_goto(r_Dialogue_1);
 			break;
+		case "level 1":
+			o_Main.level = "level 2";
+			room_goto(r_Workshop);
+			break;
+		case "level 2":
+			o_Main.level = "level 3";
+			room_goto(r_Workshop);
+			break;	
+		case "level 3":
+			o_Main.level = "level 4";
+			room_goto(r_Workshop);
+			break;	
 	}
 
 }

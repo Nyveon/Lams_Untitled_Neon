@@ -1,13 +1,13 @@
 {
-  "spriteId": {
-    "name": "s_Smol",
-    "path": "sprites/s_Smol/s_Smol.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "par_speaker",
+    "path": "objects/par_speaker/par_speaker.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -22,15 +22,16 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "NPCs",
-    "path": "folders/Objects/NPCs.yy",
+    "name": "Scene 1",
+    "path": "folders/Objects/Scene 1.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_Young_SY",
+  "name": "o_Young_YY",
   "tags": [],
   "resourceType": "GMObject",
 }

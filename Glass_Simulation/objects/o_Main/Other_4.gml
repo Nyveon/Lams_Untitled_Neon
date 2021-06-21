@@ -167,6 +167,46 @@ switch (level) {
 		}
 	case "level 1":
 		play_track(2);
+		
+		if (room == r_Dialogue_2) {
+			var fade = instance_create_layer(0, 0, "Text", o_Fade_In);
+			fade.target_action = function() {
+				o_Mid_YY.initiate_conversation();
+			}
+			fade.my_text = "Present day...";
+		} else if (room == r_Workshop) {
+			var letter = letter_L;
+			var ll = array_length(letter)
+			start_minigame_1(letter, 150, 60, ll);
+		}
 	
 		break;
+		
+	case "level 2":
+		if (room == r_Workshop) {
+			var letter = letter_A;
+			var ll = array_length(letter)
+			start_minigame_1(letter, 140, 60, ll);
+		}
+	
+		break;
+	
+	case "level 3":
+		if (room == r_Workshop) {
+			var letter = letter_M;
+			var ll = array_length(letter)
+			start_minigame_1(letter, 145, 60, ll);
+		}
+	
+		break;
+	
+	case "level 4":
+		if (room == r_Workshop) {
+			var letter = letter_S;
+			var ll = array_length(letter)
+			start_minigame_1(letter, 150, 60, ll);
+		}
+	
+		break;
+		
 }

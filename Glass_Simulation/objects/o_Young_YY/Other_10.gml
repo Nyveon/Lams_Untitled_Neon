@@ -149,8 +149,9 @@ switch (o_Main.level) {
 		
 		line(o_Young_SY, "...");
 		myEmotion[i] = 2;
+		myScripts[i] = [shop_1, 7];
 		i++;
-
+		break;
 }
 
 
