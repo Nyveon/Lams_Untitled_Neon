@@ -7,5 +7,4 @@ draw_text_color(room_width/2, room_height/2, my_text, c_white, c_white, c_white,
 
 
 
-
 draw_self();

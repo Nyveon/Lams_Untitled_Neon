@@ -24,7 +24,7 @@ switch (o_Main.level) {
 		line(id, "First we need to shape the glass tube that will become the |8neon light.|0");
 		myEmotion[i] = 0;
 		i++
-		line(id, "Try use the |2hand tool|0 to move the glass around. Drag the glass onto the template.");
+		line(id, "Try using the |2hand tool|0 to move the glass around. Drag the glass onto the template.");
 		myEmotion[i] = 0;
 		myScripts[i] = [shop_1, 0];
 		break;
@@ -88,6 +88,14 @@ switch (o_Main.level) {
 		line(id, "Gas is expensive so try to fill the meter as quickly as you can!");
 		myEmotion[i] = 0;
 		myScripts[i] = [shop_1, 5];
+		i++	
+	case "tutorial 6":
+		line(id, "Great job, Siu-Ying.");
+		myEmotion[i] = 1;
+		i++
+		line(id, "You have my blood, so I am sure with more practice you will become a neon sign master like your Yeye in no time.");
+		myEmotion[i] = 1;
+		myScripts[i] = [shop_1, 6];
 		i++	
 }
 

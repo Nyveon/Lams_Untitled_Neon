@@ -67,6 +67,11 @@ function shop_1(_i) {
 			o_Main.level = "tutorial 6";
 			room_goto(r_Pump);
 			return;
+		case 6:
+			o_Main.level = "level 1";
+			var instance = instance_create_layer(0, 0, "Text", o_Fade_Out);
+			instance.target_room = r_Dialogue_2;
+			return;
 	}
 	room_goto(r_Tutorial_Workshop);
 }

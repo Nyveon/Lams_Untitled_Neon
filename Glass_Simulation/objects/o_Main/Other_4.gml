@@ -147,8 +147,9 @@ switch (level) {
 			leave_tutorial();			
 		}
 		break;		
-	
-	
-	
-	
+	case "tutorial 6":
+		if (room == r_Dialogue_1) { // Tutorial ended	
+			leave_tutorial();			
+		}
+		break;
 }

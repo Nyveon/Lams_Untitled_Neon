@@ -35,6 +35,7 @@
     {"id":{"name":"s_SYAngry","path":"sprites/s_SYAngry/s_SYAngry.yy",},"order":0,},
     {"id":{"name":"fnt_debug","path":"fonts/fnt_debug/fnt_debug.yy",},"order":0,},
     {"id":{"name":"d_Select","path":"sounds/d_Select/d_Select.yy",},"order":6,},
+    {"id":{"name":"o_Lam_Sign","path":"objects/o_Lam_Sign/o_Lam_Sign.yy",},"order":2,},
     {"id":{"name":"s_HandRotate","path":"sprites/s_HandRotate/s_HandRotate.yy",},"order":3,},
     {"id":{"name":"s_neon9Backing","path":"sprites/s_neon9Backing/s_neon9Backing.yy",},"order":16,},
     {"id":{"name":"o_Button_Reset","path":"objects/o_Button_Reset/o_Button_Reset.yy",},"order":1,},
@@ -141,6 +142,7 @@
     {"id":{"name":"s_neon3Backing","path":"sprites/s_neon3Backing/s_neon3Backing.yy",},"order":5,},
     {"id":{"name":"s_storeImageScene","path":"sprites/s_storeImageScene/s_storeImageScene.yy",},"order":6,},
     {"id":{"name":"o_Button_Credits","path":"objects/o_Button_Credits/o_Button_Credits.yy",},"order":1,},
+    {"id":{"name":"r_Dialogue_2","path":"rooms/r_Dialogue_2/r_Dialogue_2.yy",},"order":4,},
     {"id":{"name":"s_minigame2Valve1","path":"sprites/s_minigame2Valve1/s_minigame2Valve1.yy",},"order":3,},
     {"id":{"name":"s_redStar","path":"sprites/s_redStar/s_redStar.yy",},"order":2,},
     {"id":{"name":"o_Button","path":"objects/o_Button/o_Button.yy",},"order":4,},
@@ -280,6 +282,7 @@
     {"roomId":{"name":"r_Pump","path":"rooms/r_Pump/r_Pump.yy",},},
     {"roomId":{"name":"r_Intro","path":"rooms/r_Intro/r_Intro.yy",},},
     {"roomId":{"name":"r_Tutorial_Workshop","path":"rooms/r_Tutorial_Workshop/r_Tutorial_Workshop.yy",},},
+    {"roomId":{"name":"r_Dialogue_2","path":"rooms/r_Dialogue_2/r_Dialogue_2.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

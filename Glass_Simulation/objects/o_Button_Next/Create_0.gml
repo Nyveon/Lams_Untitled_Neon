@@ -11,8 +11,10 @@ draw_hotkey = function() {
 button_action = function() {
 	audio_play_sound(d_Tutorial_Success, 1, 0);
 	
+	show_debug_message(o_Main.level);
 	switch (o_Main.level) {
 		case "tutorial 5":
+		case "tutorial 6":
 			room_goto(r_Dialogue_1);
 			break;
 	}
