@@ -31,13 +31,14 @@ switch (level) {
 			o_Flame.y = 1000;
 			
 			// Fake buttons
+			instance_create_layer(221, 205, "GUI", o_Button_Reset);
 			var fb = 0;
 			fb = instance_create_layer(86, 205, "GUI", o_Fake_Button);
 			fb.sprite_index = s_Rotate;
 			fb = instance_create_layer(139, 205, "GUI", o_Fake_Button);
 			fb.sprite_index = s_Pull;
-			fb = instance_create_layer(221, 205, "GUI", o_Fake_Button);
-			fb.sprite_index = s_Reset;
+			//fb = instance_create_layer(221, 205, "GUI", o_Fake_Button);
+			//fb.sprite_index = s_Reset;
 			fb = instance_create_layer(282, 205, "GUI", o_Fake_Button);
 			fb.sprite_index = s_Done;
 			
@@ -64,13 +65,14 @@ switch (level) {
 			}
 			
 			// Fake buttons
+			instance_create_layer(221, 205, "GUI", o_Button_Reset);
 			var fb = 0;
 			fb = instance_create_layer(86, 205, "GUI", o_Fake_Button);
 			fb.sprite_index = s_Rotate;
 			fb = instance_create_layer(139, 205, "GUI", o_Fake_Button);
 			fb.sprite_index = s_Pull;
-			fb = instance_create_layer(221, 205, "GUI", o_Fake_Button);
-			fb.sprite_index = s_Reset;
+			//fb = instance_create_layer(221, 205, "GUI", o_Fake_Button);
+			//fb.sprite_index = s_Reset;
 			fb = instance_create_layer(282, 205, "GUI", o_Fake_Button);
 			fb.sprite_index = s_Done;
 			

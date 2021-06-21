@@ -68,7 +68,7 @@ myEmotion[i] = 1;
 i++;
 
 line(id, "|1Get. out. of. my. shop!|0");
-myEmotion[i] = 0;
+myEmotion[i] = 1;
 myScripts[i] = [shop_3]; 
 i++;
 

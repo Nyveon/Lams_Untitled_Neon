@@ -89,6 +89,7 @@
     {"id":{"name":"s_storeImageNeonBacking","path":"sprites/s_storeImageNeonBacking/s_storeImageNeonBacking.yy",},"order":10,},
     {"id":{"name":"s_Cursor","path":"sprites/s_Cursor/s_Cursor.yy",},"order":5,},
     {"id":{"name":"o_Intro_Dialogue","path":"objects/o_Intro_Dialogue/o_Intro_Dialogue.yy",},"order":10,},
+    {"id":{"name":"s_Valve_Hitbox","path":"sprites/s_Valve_Hitbox/s_Valve_Hitbox.yy",},"order":4,},
     {"id":{"name":"d_Click","path":"sounds/d_Click/d_Click.yy",},"order":16,},
     {"id":{"name":"s_CityScape","path":"sprites/s_CityScape/s_CityScape.yy",},"order":0,},
     {"id":{"name":"s_FlameHitbox","path":"sprites/s_FlameHitbox/s_FlameHitbox.yy",},"order":0,},

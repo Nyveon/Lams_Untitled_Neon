@@ -19,25 +19,31 @@ function intro(_i) {
 			o_Cutsign_9.flickering = true;
 			break;
 		case 2:
+			o_Cutsign_1.visible = false;
 			o_Cutsign_3.glowing = false;
 			o_Cutsign_9.glowing = false;
 			o_Cutsign_4.flickering = true;
 			break;
 		case 3:
+			o_Cutsign_2.visible = false;
 			o_Cutsign_4.glowing = false;
 			o_Cutsign_5.flickering = true;
 			break;
 		case 4:
+			o_Cutsign_3.visible = false;
+			o_Cutsign_9.visible = false;
 			o_Cutsign_5.glowing = false;
 			o_Cutsign_6.flickering = true;
 			o_Cutsign_7.flickering = true;
 			break;
 		case 5:
+			o_Cutsign_4.visible = false;
 			o_Cutsign_6.glowing = false;
 			o_Cutsign_7.glowing = false;
 			o_Cutsign_8.flickering = true;
 			break;
 		case 6:
+			o_Cutsign_5.visible = false;
 			o_Cutsign_8.glowing = false;
 			var instance = instance_create_layer(0, 0, "Text", o_Fade_Out);
 			instance.target_room = r_Dialogue_1;

@@ -1,6 +1,7 @@
 
+
 draw_sprite(sign_sprite, 0, x, y);
- // draw backing
+// draw backing
 
 // Draw glowy bit
 if glowing {
@@ -17,4 +18,6 @@ if glowing {
 	draw_self();
 	shader_reset();
 }
+
+
 

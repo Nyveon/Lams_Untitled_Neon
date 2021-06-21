@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "s_Valve_Hitbox",
+    "path": "sprites/s_Valve_Hitbox/s_Valve_Hitbox.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
