@@ -35,6 +35,7 @@ button_action = function() {
 			break;
 		case "level 5":
 			o_Main.level = "cutscene 3";
+			room_goto(r_Epilogue_1);
 			break;
 	}
 

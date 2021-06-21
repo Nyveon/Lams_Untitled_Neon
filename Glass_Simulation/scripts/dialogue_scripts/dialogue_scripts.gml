@@ -105,3 +105,28 @@ function shop_4() {
 	instance.target_room = r_Pump;
 	return;	
 }
+
+function epilogue(_i) {
+	switch (_i) {
+		case 0:
+			audio_play_sound(d_Grab, 1, 0);
+			instance_create_layer(room_width/2, 105, "Instances", o_Box);
+			break;
+		case 1:
+			audio_play_sound(d_Open_Package, 1, 0);
+			instance_destroy(o_Box);
+			var fade = instance_create_layer(0, 0, "Text", o_Fade_OutIn);
+			fade.my_text = "Later that day..."
+			fade.target_action_a = function() {
+				o_Back.sprite_index = s_storeImageScene;
+				o_Back.state = 1;
+				o_Main.level = "epilogue 1";
+				room_goto(r_Epilogue_mid);
+			}
+			fade.target_action_b = function() {
+				o_Back.alarm[0] = 1;
+			}
+			break;
+		
+	}
+}

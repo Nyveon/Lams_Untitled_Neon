@@ -35,6 +35,10 @@ letter_M = [[0,0],[1,0],[2,0],[3,0],[4,0],[5,0],[6,0],[7,0],[8,0],[9,0],[10,0],[
 
 tracks = [m_Title, m_Tutorial, m_Workshop, m_Neon_is_Dead, m_Epilogue];
 play_track = function(m) {
+	if (m == -1) {
+		return;
+	}
+	
 	
 	for (var j = 0; j < array_length(tracks); j++) {
 		if (j != m) {

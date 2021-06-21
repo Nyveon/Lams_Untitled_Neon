@@ -238,4 +238,32 @@ switch (level) {
 		} else if (room == r_Pump) {
 			//Other
 		}
+		break;
+	
+	case "cutscene 3":
+		play_track(-1); // stop the music
+		var fade = instance_create_layer(0, 0, "Text", o_Fade_In);
+			fade.target_action = function() {
+				o_Back.initiate_conversation();
+			}
+		fade.my_text = "Present day...";
+		break;
+		
+	case "epilogue 1":
+		var fade = instance_create_layer(0, 0, "Text", o_Fade_In);
+			fade.target_action = function() {
+				o_Pre_Final.alarm[0] = 120;
+			}
+		fade.my_text = "Later that day...";	
+		fade.fade_rate = 0.003;
+		break;		
+		
+	case "epilogue 2":
+		var fade = instance_create_layer(0, 0, "Text", o_Fade_In);
+			fade.target_action = function() {
+				o_Final.alarm[0] = 60;
+			}
+		fade.my_text = "That night...";	
+		fade.fade_rate = 0.001;
+		break;
 }
