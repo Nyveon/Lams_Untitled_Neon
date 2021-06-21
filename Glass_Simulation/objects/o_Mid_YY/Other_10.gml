@@ -30,6 +30,7 @@ if o_Main.level == "level 1" {
 	i++;
 	line(id, "It will stop the light from dimming when it's cold.");
 	myEmotion[i] = 2;
+	myScripts[i] = [shop_4];
 	i++;	
 }
 

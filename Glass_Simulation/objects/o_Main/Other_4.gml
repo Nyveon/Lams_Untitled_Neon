@@ -1,3 +1,5 @@
+audio_play_sound(d_Woosh, 10, 0);
+
 switch (level) {
 	// --Main menu, intro cutscene and first dialogue--
 	case "start":

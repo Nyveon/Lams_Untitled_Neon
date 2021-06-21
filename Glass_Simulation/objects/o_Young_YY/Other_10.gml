@@ -47,6 +47,7 @@ switch (o_Main.level) {
 		myEmotion[i] = 1;
 		myScripts[i] = [shop_1, 2];
 		i++;
+		break;
 	case "tutorial 3":
 		line(id, "Now, time to put what you have learned together.");
 		myEmotion[i] = 0;
@@ -55,6 +56,7 @@ switch (o_Main.level) {
 		myEmotion[i] = 0;
 		myScripts[i] = [shop_1, 3];
 		i++
+		break;
 	case "tutorial 4":
 		line(id, "If you |rheat up|d a larger section of the glass, you can also use the |2\"pull tool\"|0 in order to create |bcurves|d.");
 		myEmotion[i] = 0;
@@ -63,6 +65,7 @@ switch (o_Main.level) {
 		myEmotion[i] = 0;
 		myScripts[i] = [shop_1, 4];
 		i++;
+		break;
 	case "tutorial 5":
 		line(id, "Now that we have created a glass tube, we move on to the next part: filling it up with neon gas.");
 		myEmotion[i] = 0;
@@ -88,7 +91,8 @@ switch (o_Main.level) {
 		line(id, "Gas is expensive so try to fill the meter as quickly as you can!");
 		myEmotion[i] = 0;
 		myScripts[i] = [shop_1, 5];
-		i++	
+		i++;
+		break;
 	case "tutorial 6":
 		line(id, "Great job, Siu-Ying.");
 		myEmotion[i] = 1;
@@ -96,7 +100,8 @@ switch (o_Main.level) {
 		line(id, "You have my blood, so I am sure with more practice you will become a neon sign master like your Yeye in no time.");
 		myEmotion[i] = 1;
 		myScripts[i] = [shop_1, 6];
-		i++	
+		i++
+		break;
 	case "cutscene 1":
 		line(o_Young_SY, "Yeye! I'm going out. I'll be back later.");
 		myEmotion[i] = 1;

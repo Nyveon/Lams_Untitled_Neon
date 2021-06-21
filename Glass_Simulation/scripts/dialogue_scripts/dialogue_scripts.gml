@@ -93,3 +93,9 @@ function shop_3() {
 	instance.target_room = r_Dialogue_2;
 	return;	
 }
+
+function shop_4() {
+	var instance = instance_create_layer(0, 0, "Text", o_Fade_Out);
+	instance.target_room = r_Pump;
+	return;	
+}
