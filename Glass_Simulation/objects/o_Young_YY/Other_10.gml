@@ -76,7 +76,24 @@ switch (o_Main.level) {
 		line(o_Young_SY, "Wow, a |3special new color|0? I can’t wait to see it! How do I fill the tube, Yeye?");
 		myEmotion[i] = 2;
 		i++
+		line(id, "Use the |2left mouse button|0 on the valves to release gas into the glass tubes.");
+		myEmotion[i] = 0;
+		i++
+		line(id, "Keep the gas levels within the |bblue markings|d on each tube.");
+		myEmotion[i] = 0;
+		i++
+		line(id, "When both gas levels are correct, the meter on the left will fill up.");
+		myEmotion[i] = 0;
+		i++
+		line(id, "Gas is expensive so try to fill the meter as quickly as you can!");
+		myEmotion[i] = 0;
+		myScripts[i] = [shop_1, 5];
+		i++
 		
+
+		
+
+
 		
 }
 

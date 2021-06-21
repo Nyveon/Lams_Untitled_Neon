@@ -62,7 +62,11 @@ function shop_1(_i) {
 			break;
 		case 4:
 			o_Main.level = "tutorial 5";
-			break;			
+			break;
+		case 5:
+			o_Main.level = "tutorial 6";
+			room_goto(r_Pump);
+			return;
 	}
 	room_goto(r_Tutorial_Workshop);
 }
