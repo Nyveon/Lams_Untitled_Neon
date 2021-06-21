@@ -27,7 +27,7 @@ line = function(__speaker, _text) {
 	var final_text = "";
 
 	//myTextCol[i] = [1, __speaker.myColour];
-	myTextCol[i] = []
+	myTextCol[i] = [];
 	myEffects[i] = [];
 	var current_index = 1;
 	
@@ -86,7 +86,6 @@ line = function(__speaker, _text) {
 				case "8": // Neon
 					array_push(myEffects[i], current_index, 8);
 					break;
-
 				
 			}
 			current_index -= 1;

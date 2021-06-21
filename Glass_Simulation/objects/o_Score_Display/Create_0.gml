@@ -24,6 +24,8 @@ flicker_ticks = 0;
 
 // Stars and star display
 stars = floor((o_Main.score_precision_ratio)*6) //max(0,5-floor((score_p+0.1)/100)); 
+o_Main.stars += stars;
+
 //stars = 2; //debug stars
 displayed_stars = 0;
 star_time = 40;

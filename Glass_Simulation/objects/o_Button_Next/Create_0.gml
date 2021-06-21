@@ -28,6 +28,10 @@ button_action = function() {
 		case "level 3":
 			o_Main.level = "level 4";
 			room_goto(r_Workshop);
+			break;
+		case "level 4":
+			o_Main.level = "cutscene 2";
+			room_goto(r_Dialogue_3);
 			break;	
 	}
 

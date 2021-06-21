@@ -86,3 +86,10 @@ function shop_2() {
 	instance.target_room = r_Workshop;
 	return;	
 }
+
+function shop_3() {
+	var instance = instance_create_layer(0, 0, "Text", o_Fade_Out);
+	o_Main.level = "level 5";
+	instance.target_room = r_Dialogue_2;
+	return;	
+}

@@ -3,19 +3,12 @@
 
 //--------Dialogue Stuff
 reset_dialogue_defaults();
-myPortrait			= s_YSY_Portrait;
+myPortrait			= s_SY_Portrait;
 //myVoice				= [d_Girl_1, d_Girl_2, d_Girl_3, d_Girl_4];
-myVoice = [d_Woman_7]; // Younger
-//myVoice = [d_Woman_6]; // Older
+//myVoice = [d_Woman_7]; // Younger
+myVoice = [d_Woman_6]; // Older
 myName				= "Siu-Ying";
 myColour = make_colour_rgb(31, 187, 210);
 
-// Grow a bit
-//if o_Main.level == "cutscene 1" {
-	//image_yscale = 1.2;
-//}
 
-// Emotions:
-// 0 = very happy
-// 1 = happy
-// 2 = neutral
+

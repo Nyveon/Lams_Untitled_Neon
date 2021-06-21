@@ -208,5 +208,30 @@ switch (level) {
 		}
 	
 		break;
+	
+	case "cutscene 2":
+		play_track(3);
+	
+		if (room == r_Dialogue_3) {
+			var fade = instance_create_layer(0, 0, "Text", o_Fade_In);
+			fade.target_action = function() {
+				o_YY.initiate_conversation();
+			}
+			fade.my_text = "5 years ago...";
+		}
+	
+		break;
+	
+	case "level 5":
+		play_track(2);
 		
+		if (room == r_Dialogue_2) {
+			var fade = instance_create_layer(0, 0, "Text", o_Fade_In);
+			fade.target_action = function() {
+				o_Mid_YY.initiate_conversation();
+			}
+			fade.my_text = "Present day...";
+		} else if (room == r_Pump) {
+			//Other
+		}
 }
