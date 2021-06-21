@@ -15,7 +15,7 @@ if o_Hand.current_tool == 0 { // only heat when in drag mode
 		}
 	} else {
 		audio_stop_sound(d_Heating);
-		if (!audio_is_playing(d_Burner)) {
+		if (!muted and !audio_is_playing(d_Burner)) {
 			audio_play_sound(d_Burner, 5, true);
 		}
 	}

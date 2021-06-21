@@ -10,6 +10,7 @@ hitbox = instance_create_layer(x, y, "Instances", o_FlameHitbox);
 dragging = false;
 mouse_relative_x = 0;
 mouse_relative_y = 0;
+muted = false;
 
 //todo: split in two
 //todo: draggable

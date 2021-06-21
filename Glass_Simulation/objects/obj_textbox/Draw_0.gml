@@ -190,16 +190,16 @@ else {
 				break; 
 			
 			case 3: //colour shift
-				var c1 = make_colour_hsv(t+cc, 255, 255);
-				var c2 = make_colour_hsv(t+cc+34, 255, 255);
+				var c1 = make_colour_hsv((t+cc)%255, 255, 255);
+				var c2 = make_colour_hsv((t+cc+34)%255, 255, 255);
 				draw_text_color(xx + (cx*charSize), yy+(cy*stringHeight), letter, c1, c1, c2, c2, 1);
 				break;
 		
 			case 4: //wave AND colour shift
 				var so = t + cc;
 				var shift = sin(so*pi*freq/room_speed)*amplitude;
-				var c1 = make_colour_hsv(t+cc, 255, 255);
-				var c2 = make_colour_hsv(t+cc+45, 255, 255);
+				var c1 = make_colour_hsv((t+cc)%255, 255, 255);
+				var c2 = make_colour_hsv((t+cc+45)%255, 255, 255);
 				draw_text_color(xx + (cx*charSize), yy+(cy*stringHeight)+shift, letter, c1, c1, c2, c2, 1);
 				break; 
 		
@@ -226,6 +226,20 @@ else {
 				var shift = sin(so*pi*freq/room_speed);
 				draw_text_color(xx + (cx*charSize), yy+(cy*stringHeight), letter, col, col, col, col, shift+random_range(-1,1));
 				break; 
+			
+			case 8: //neon
+				draw_text_color(xx + (cx*charSize), yy+(cy*stringHeight), letter, col, col, col, col, 1);
+				surface_set_target(o_Glow.glow_pass_surface);
+					draw_text_color(xx + (cx*charSize), yy+(cy*stringHeight), letter, col, col, col, col, 1);
+				surface_reset_target();
+				break;
+				
+			case 9: // true wave
+                var so = t+cx;
+                var shift = sin(so*pi*freq/room_speed)*amplitude;
+                draw_text_color(xx + (cx), yy+(cy*stringHeight)+shift, letter, col, col, col, col, 1);
+                break;
+				
 		}
 		
 		//Increment variables for next letter

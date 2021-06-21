@@ -1,5 +1,6 @@
-fade_rate = 0.008;
+fade_rate = 0.004;
 image_alpha = 1;
+my_text = "";
 
 target_action = function() {
 	return;

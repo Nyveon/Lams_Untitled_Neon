@@ -44,6 +44,23 @@ function intro(_i) {
 	return;
 }
 
-function shop_1() {
-	room_goto(r_Workshop);
+function shop_1(_i) {
+	switch (_i) {
+		case 0:
+			o_Main.level = "tutorial 1";
+			break;
+		case 1:
+			o_Main.level = "tutorial 2";
+			break;
+		case 2:
+			o_Main.level = "tutorial 3";
+			break;
+		case 3:
+			o_Main.level = "tutorial 4";
+			break;
+		case 4:
+			o_Main.level = "tutorial 5";
+			break;			
+	}
+	room_goto(r_Tutorial_Workshop);
 }

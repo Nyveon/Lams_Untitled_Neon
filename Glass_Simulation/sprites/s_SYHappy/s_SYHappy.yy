@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "PortraitSprites",
-    "path": "folders/Sprites/PortraitSprites.yy",
+    "name": "Old",
+    "path": "folders/Sprites/PortraitSprites/Old.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_SYHappy",

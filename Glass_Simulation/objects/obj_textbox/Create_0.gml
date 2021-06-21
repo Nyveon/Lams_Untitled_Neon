@@ -98,7 +98,7 @@ stringHeight	= 1;
 //---------------------Effect variables
 
 t			= 0;
-amplitude	= 4;
+amplitude	= 2;
 freq		= 2;
 ec			= 0;	//effect c
 

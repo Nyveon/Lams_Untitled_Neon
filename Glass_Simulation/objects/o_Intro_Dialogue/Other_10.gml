@@ -3,6 +3,10 @@
 reset_dialogue_defaults();
 
 i = 0;
+// Effects test
+line(id, "|0Normal |1Shake |2Wave |3Shift |4Waveshift |5Spin |6Pulse |7Flicker |8Neon");
+myScripts[i] = [intro, i];
+i++
 line(id, "In the post-World War II era, |wneon lights|d were an iconic part of Hong Kong's city streets.");
 myScripts[i] = [intro, i];
 i++;

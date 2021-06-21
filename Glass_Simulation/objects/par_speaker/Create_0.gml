@@ -1,6 +1,6 @@
 
 //-----------Customise (FOR USER)
-playerobject = o_Player;
+//playerobject = o_Player;
 interact_key = ord("E");
 detection_radius = 320;
 
@@ -27,6 +27,7 @@ line = function(__speaker, _text) {
 	var final_text = "";
 
 	myTextCol[i] = [1, __speaker.myColour];
+	myEffects[i] = [];
 	var current_index = 1;
 	
 	for (var j = 1; j <= string_len; j++) {
@@ -37,14 +38,55 @@ line = function(__speaker, _text) {
 			j++;
 			ch = string_char_at(pre_text, j);
 			switch ch {
+				// -- Colors --
 				case "w": // White text
-					array_push(myTextCol[i], current_index);
-					array_push(myTextCol[i], c_white);
+					array_push(myTextCol[i], current_index, c_white);
+					break;
+				case "r": // Red text
+					array_push(myTextCol[i], current_index, c_red);
+					break;
+				case "g": // Green text
+					array_push(myTextCol[i], current_index, c_green);
+					break;
+				case "b": // Blue text
+					array_push(myTextCol[i], current_index, c_blue);
+					break;
+				case "p": // Purple text
+					array_push(myTextCol[i], current_index, c_purple);
 					break;
 				case "d": // Default color
-					array_push(myTextCol[i], current_index);
-					array_push(myTextCol[i], myColour);
-					break;				
+					array_push(myTextCol[i], current_index, myColour);
+					break;
+				// -- Effects --
+				case "0": // Normal
+					array_push(myEffects[i], current_index, 0);
+					break;
+				case "1": // Shake
+					array_push(myEffects[i], current_index, 1);
+					break;
+				case "2": // Wave
+					array_push(myEffects[i], current_index, 2);
+					break;
+				case "3": // Colour Shift
+					array_push(myEffects[i], current_index, 3);
+					break;
+				case "4": // Wave+Shift
+					array_push(myEffects[i], current_index, 4);
+					break;
+				case "5": // Spin
+					array_push(myEffects[i], current_index, 5);
+					break;
+				case "6": // Pulse
+					array_push(myEffects[i], current_index, 6);
+					break;
+				case "7": // Flicker
+					array_push(myEffects[i], current_index, 7);
+					break;
+				case "8": // Neon
+					array_push(myEffects[i], current_index, 8);
+					break;
+
+				
 			}
 			current_index -= 1;
 		}
