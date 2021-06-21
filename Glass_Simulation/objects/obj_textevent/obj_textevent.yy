@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "FC_DialogueSystem",
-    "path": "folders/Objects/FC_DialogueSystem.yy",
+    "name": "Dialogue",
+    "path": "folders/Objects/Dialogue.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_textevent",

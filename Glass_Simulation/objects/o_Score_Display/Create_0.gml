@@ -13,6 +13,7 @@ score_p = o_Main.score_precision;
 displayed_score_p = 0;
 score_t = o_Main.score_time;
 displayed_score_t = 0;
+score_increment = 17;
 
 
 // half life flicker
@@ -31,3 +32,5 @@ star_time = 30;
 star_time_increment = 1.5;
 alarm[0] = star_time;
 stars_displaying = true;
+
+audio_play_sound(d_Star_1, 2, 1);

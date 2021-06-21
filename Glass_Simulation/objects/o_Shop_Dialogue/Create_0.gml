@@ -7,7 +7,7 @@ event_inherited();
 //-------DIALOGUE STUFF
 
 myPortrait			= s_YoungG;
-myVoice				= snd_voice1;
+myVoice				= [d_Man_2, d_Man_5];
 myName				= "Mr. Lam";
 
 myColour = make_colour_rgb(70, 219, 80);

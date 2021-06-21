@@ -62,6 +62,9 @@ nodes = ds_list_create();
 
 #region Animation and visual
 glowing = false;
+mouse_x_old = mouse_x;
+mouse_y_old = mouse_y;
+heated_bend = false;
 #endregion
 
 #region Big maths

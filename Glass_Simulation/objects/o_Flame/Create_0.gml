@@ -1,4 +1,5 @@
 num = 0;
+old_num = 0;
 touching = ds_list_create();
 
 // Heating element

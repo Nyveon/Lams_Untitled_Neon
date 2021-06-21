@@ -1,3 +1,7 @@
+//Current voice
+var cvoice = voice[page][irandom(array_length(voice[page])-1)];
+audio_sound_pitch(cvoice, random_range(0.9, 1.1));
+
 //Draw textbox
 draw_sprite_ext(dialogue_box, 0, pos_x,pos_y, scale,scale, 0, c_white, 1);
 
@@ -30,7 +34,7 @@ draw_set_font(font[page]);
 #region TYPE 1: DIALOGUE CHOICE
 if(type[page] == 1){
 	//Variables we need
-	var col = default_col, tp = text[page], tpl = array_length_1d(tp), txtwidth = boxWidth-(2*x_buffer);
+	var col = default_col, tp = text[page], tpl = array_length(tp), txtwidth = boxWidth-(2*x_buffer);
 	var cc = 1, yy = pos_y+y_buffer, xx = pos_x+x_buffer, ii = 0, iy = 0;
 	
 	//Loop through our choices, draw them, highlight the one we are selecting
@@ -104,7 +108,7 @@ else {
 						if(l == "a" or l == "e" or l == "i" or l == "o" or l == "u"){ 
 							portrait_talk_c = open_mouth_frame; 
 							if (charCount > audio_c) { 
-								audio_play_sound(voice[page], 1, false); 
+								audio_play_sound(cvoice, 1, false); 
 								audio_c = charCount + audio_increment; 
 							} 
 						}
@@ -119,7 +123,7 @@ else {
 					}
 				} 
 				#endregion
-				else if (charCount >= audio_c) { audio_play_sound(voice[page], 1, false); audio_c = charCount + audio_increment; }
+				else if (charCount >= audio_c) { audio_play_sound(cvoice, 1, false); audio_c = charCount + audio_increment; }
 		}
 		#endregion
 		
@@ -132,7 +136,7 @@ else {
 	var bp_array = breakpoints, txtwidth = boxWidth-(2*x_buffer), char_max = txtwidth div charSize; 
 	
 	//Check if there are breakpoints in this string, if there are save their lengths
-	if(bp_array != -1){ bp_len = array_length_1d(bp_array); next_space = breakpoints[by]; by++; }
+	if(bp_array != -1){ bp_len = array_length(bp_array); next_space = breakpoints[by]; by++; }
 	
 	//For sin wave stuff
 	t += 1;

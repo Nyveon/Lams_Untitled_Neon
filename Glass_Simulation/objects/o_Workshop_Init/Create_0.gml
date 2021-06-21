@@ -5,3 +5,5 @@ switch (o_Main.level) {
 		start_minigame_1(letter_L);
 	break;
 }
+
+audio_play_sound(d_Workshop_Ambience, 9, true);

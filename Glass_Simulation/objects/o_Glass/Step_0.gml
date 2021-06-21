@@ -1,4 +1,6 @@
 #region Input
+var pre_selected = selected;
+
 // Release drag
 if (o_Input.action_released) {
 	selected = -1;
@@ -29,6 +31,16 @@ for (var i = 0; i < ds_list_size(nodes); i++) {  // MERGE INTO NODE-STEP
 		}
 	}
 }
+// Grab/drop sound
+if (pre_selected != selected) {
+	if (pre_selected == -1) {
+		audio_play_sound(d_Grab, 2, 0);
+	} else if (selected == -1) {
+		audio_play_sound(d_Release, 2, 0);
+	}
+}
+
+
 
 // Temperature because of flame
 //todo: adjust rate
@@ -61,6 +73,7 @@ if (selected != -1) {
 
 		// If there is even something to be bent,
 		if (ds_list_size(heated_group_midpoints) > 0) {
+			heated_bend = true;
 			
 			// Get nearest heated midpoint to mouse (one to be bent)
 			var pivot = heated_nearest();
@@ -133,6 +146,8 @@ if (selected != -1) {
 		heated_groups(heated_group_midpoints);
 		
 		if (ds_list_size(heated_group_midpoints) > 0) {
+			heated_bend = true;
+			
 			// Get nearest heated node group
 			var pivot = heated_nearest(); // control point 2 (vertex)
 			var pivot_node = nodes[| pivot];
@@ -189,11 +204,30 @@ if (selected != -1) {
 		// Cleanup
 		ds_list_destroy(heated_group_midpoints);
 	}
-
-	// ---Heat up---
-	if (o_Input.debug_heat_up) {
-		nodes[| selected].changeTemperature(1);
+	
+	// Bending/pulling sound
+	if (o_Hand.current_tool == 1 || o_Hand.current_tool == 2) {
+		var delta_mouse = abs(mouse_x - mouse_x_old) + abs(mouse_y - mouse_y_old);
+		if (heated_bend && delta_mouse > 1) {
+			if (not (audio_is_playing(d_Bend_1) && audio_is_playing(d_Bend_2) && audio_is_playing(d_Bend_3) && audio_is_playing(d_Bend_4))) {
+				audio_play_sound(choose(d_Bend_1, d_Bend_2, d_Bend_3, d_Bend_4), 3, 0);
+			}
+		}
 	}
+	
 }
+
+if (!heated_bend) {
+	audio_stop_sound(d_Bend_1);
+	audio_stop_sound(d_Bend_2);
+	audio_stop_sound(d_Bend_3);
+	audio_stop_sound(d_Bend_4);
+}
+
+
+// sound stuff
+mouse_x_old = mouse_x;
+mouse_y_old = mouse_y;
+heated_bend = false;
 
 
