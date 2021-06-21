@@ -63,6 +63,20 @@ switch (o_Main.level) {
 		myEmotion[i] = 0;
 		myScripts[i] = [shop_1, 4];
 		i++;
+	case "tutorial 5":
+		line(id, "Now that we have created a glass tube, we move on to the next part: filling it up with neon gas.");
+		myEmotion[i] = 0;
+		i++
+		line(id, "Neon gas gives off a |8|rred glow|d|0 when electrified. Argon gas gives off a |8|plavender glow|d|0.");
+		myEmotion[i] = 0;
+		i++
+		line(id, "We are going to fill your sign up with neon and argon to create a |3special new color|0.");
+		myEmotion[i] = 0;
+		i++
+		line(o_Young_SY, "Wow, a |3special new color|0? I can’t wait to see it! How do I fill the tube, Yeye?");
+		myEmotion[i] = 2;
+		i++
+		
 		
 }
 

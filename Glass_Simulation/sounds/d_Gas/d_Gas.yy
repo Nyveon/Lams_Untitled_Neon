@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.11,
+  "volume": 0.13,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "d_Squeak_2.ogg",
-  "duration": 0.489422,
+  "soundFile": "d_Gas.ogg",
+  "duration": 0.615363,
   "parent": {
     "name": "Pump",
     "path": "folders/Sounds/Pump.yy",
   },
   "resourceVersion": "1.0",
-  "name": "d_Squeak_2",
+  "name": "d_Gas",
   "tags": [],
   "resourceType": "GMSound",
 }

@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "s_nextButton",
-    "path": "sprites/s_nextButton/s_nextButton.yy",
+    "name": "s_minigame2bluerectangle",
+    "path": "sprites/s_minigame2bluerectangle/s_minigame2bluerectangle.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "o_Button",
-    "path": "objects/o_Button/o_Button.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,16 +21,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Controllers",
-    "path": "folders/Objects/Controllers.yy",
+    "name": "Minigame 2",
+    "path": "folders/Objects/Minigame 2.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_Button_Next",
+  "name": "o_Blue_Goal_Left",
   "tags": [],
   "resourceType": "GMObject",
 }

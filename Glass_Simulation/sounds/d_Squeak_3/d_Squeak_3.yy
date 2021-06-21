@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.11,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -13,8 +13,8 @@
   "soundFile": "d_Squeak_3.ogg",
   "duration": 0.432392,
   "parent": {
-    "name": "Unimplemented",
-    "path": "folders/Sounds/Unimplemented.yy",
+    "name": "Pump",
+    "path": "folders/Sounds/Pump.yy",
   },
   "resourceVersion": "1.0",
   "name": "d_Squeak_3",
